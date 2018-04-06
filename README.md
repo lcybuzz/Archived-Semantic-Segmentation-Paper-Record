@@ -9,7 +9,7 @@
 - [Traditional Classical Methods](#traditional-classical-methods)
 - [Datasets](#datasets)
 - [Leaderboards](#leaderboards)
-- [Sources&Lists](#sources-lists)
+- [Sources-Lists](#sources-lists)
 
 # Deep Learning Methods
 
@@ -175,7 +175,7 @@
 ### **PSPNet ★☆**
 **[Paper]** Pyramid Scene Parsing Network <Br>
 **[Year]** CVPR 2017 <Br>
-**[Authors]** Hengshuang Zhao, Jianping Shi,  Xiaojuan Qi, [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/), [Jiaya Jia](http://www.cse.cuhk.edu.hk/leojia/) <Br>  
+**[Authors]** Hengshuang Zhao, Jianping Shi,  Xiaojuan Qi, [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/), [Jiaya Jia](http://www.cse.cuhk.edu.hk/leojia/) <Br>
 **[Pages]** https://hszhao.github.io/projects/pspnet/ <Br>
 **[Description]** <Br>
 1) 提出了pyramid pooling module结合不同尺度的context information。PSPNet把特征图进行不同尺度的pooling(类似spatial pyramid pooling)，再将所有尺度的输出scale到相同尺寸，并concat起来
@@ -277,7 +277,7 @@
 [ILSVRC2016](http://image-net.org/challenges/LSVRC/2016/results)  <Br>
 
 
-# Sources&Lists<Br>
+# Sources-Lists<Br>
 https://handong1587.github.io/deep_learning/2015/10/09/segmentation.html <Br>
 https://github.com/mrgloom/awesome-semantic-segmentation <Br>
 
