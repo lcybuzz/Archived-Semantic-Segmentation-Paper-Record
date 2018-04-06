@@ -46,7 +46,7 @@
 **[Paper]** Feedforward semantic segmentation with zoom-out features<Br>
 **[Year]** CVPR 2015<Br>
 **[Authors]** Mohammadreza Mostajabi, Payman Yadollahpour, Gregory Shakhnarovich<Br>
-**[Pages] **https://bitbucket.org/m_mostajabi/zoom-out-release <Br>
+**[Pages]**https://bitbucket.org/m_mostajabi/zoom-out-release <Br>
 **[Description]**<Br>
 1) 以超像素为最小单位，逐步zoom out提取更大尺度的信息，zoom out特征是从CNN不同层提取的特征得到的
 2) 特征在超像素的范围内进行average pooling，并concat不同level的特征得到该超像素最后的特征向量。用样本集中每一类出现频率的倒数加权loss。
