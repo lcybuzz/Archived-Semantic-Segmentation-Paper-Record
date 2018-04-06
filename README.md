@@ -125,7 +125,7 @@
 **[Year]** arXiv 2015 <Br>
 **[Authors]** [Alex Kendall](https://alexgkendall.com/), [Vijay Badrinarayanan](https://sites.google.com/site/vijaybacademichomepage/home), [Roberto Cipolla](http://mi.eng.cam.ac.uk/~cipolla/index.htm) <Br>
 **[Pages]** http://mi.eng.cam.ac.uk/projects/segnet/ <Br>
-
+	
 **[Paper]** SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation <Br>
 **[Year]** PAMI 2017 <Br>
 **[Authors]** [Vijay Badrinarayanan](https://sites.google.com/site/vijaybacademichomepage/home), [Alex Kendall](https://alexgkendall.com/), [Roberto Cipolla](http://mi.eng.cam.ac.uk/~cipolla/index.htm) <Br>
