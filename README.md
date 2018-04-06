@@ -9,7 +9,7 @@
 - [Traditional Classical Methods](#traditional-classical-methods)
 - [Datasets](#datasets)
 - [Leaderboards](#leaderboards)
-- [sources & lists](#sources-lists)
+- [Sources & lists](#sources-lists)
 
 # Deep Learning Methods
 
@@ -28,7 +28,8 @@
 2) 把全连接视为一种卷积
 3) 特征图通过deconvolution（初始为bilinear interpolation)上采样，恢复为原来的分辨率
 4) 使用skip connection改善coarse segmentation maps
-	 
+	
+	
 ### **U-Net ★**
 **[Paper]** U-Net: Convolutional Networks for Biomedical Image Segmentation<Br>
 **[Year]** MICCAI 2015<Br>
@@ -132,7 +133,7 @@
 1) encoder-decoder的代表模型之一，特点是将encoder中的pooling indices保存下来，decoder上采样时用这些indices得到sparse feature map，再用trainable conv得到dense feature map
 
 
-### ***Piecewise CRF * ★**
+### ***Piecewise CRF* ★**
 **[Paper]** Efficient piecewise training of deep structured models for semantic segmentation<Br>
 **[Year]** CVPR 2016 <Br>
 **[Authors]** [Guosheng Lin](https://sites.google.com/site/guoshenglin/), [Chunhua Shen](https://cs.adelaide.edu.au/~chhshen/2016.html), [Anton van dan Hengel](https://cs.adelaide.edu.au/~hengel/), [Ian Reid](http://www.robots.ox.ac.uk/~ian/)  <Br>
@@ -146,7 +147,7 @@
 **[Paper]** ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation<Br>
 **[Year]** arXiv 1606<Br>
 **[Authors]** Adam Paszke, Abhishek Chaurasia, Sangpil Kim, Eugenio Culurciello <Br>
-**[Pages] ** https://github.com/e-lab/ENet-training  <Br>
+**[Pages]** https://github.com/e-lab/ENet-training  <Br>
 **[Description]** <Br>
 1) 一种快速的encoder-decoder分割网络
 2) 大encoder，小decoder; PReLU代替ReLU; 1xn和nx1卷积代替nxn卷积
@@ -276,7 +277,7 @@
 [ILSVRC2016](http://image-net.org/challenges/LSVRC/2016/results)  <Br>
 
 
-# sources & lists <Br>
+# Sources & lists<Br>
 https://handong1587.github.io/deep_learning/2015/10/09/segmentation.html <Br>
 https://github.com/mrgloom/awesome-semantic-segmentation <Br>
 
