@@ -201,6 +201,15 @@
 1) 粗读. 使用hypercolumn思想, 速度快. 适用于segmentation, 边缘检测, normal estimation等low-level到high-level的多种问题.
 2) hypercolumn即: 对于一个pixel, 将每一层feature map中其对应位置的feature连接起来组成一个vector, 用MLP对该vector分类.
 3) 文中提出, 训练时 just sampling a small number of pixels per image is sufficient for learning. 这样一个mini-batch里就可以从多张图片中采样, 增加了diversity.
+	
+### SDN ★
+**[Paper]** Stacked Deconvolutional Network for Semantic Segmentation  <Br>
+**[Year]** arXiv 1708 <Br>
+**[Author]** 	Jun Fu, Jing Liu, Yuhang Wang, Hanqing Lu  <Br>
+**[Pages]**  <Br>
+**[Description]**  <Br>
+1) 粗读. 效果好, 未开源.
+2) 以DenseNet为基础, 构建了stacked的encoder-decoder模型, 论文中认为这能更好的捕捉multi-scale context. 网络充满了inter和intra的unit connections, 并加入了hierarchical supervisions, 使非常深的SDN能够成功训练.
 
 
 ## Weakly Supervision
