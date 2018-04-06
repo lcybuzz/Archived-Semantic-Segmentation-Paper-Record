@@ -254,7 +254,7 @@
 **[Paper]** Contour Detection and Hierarchical Image Segmentation <Br>
 **[Year]** TPAMI 2011 <Br>
 **[Authors]**  [Pablo Arbelaez](https://biomedicalcomputervision.uniandes.edu.co/),	[Michael Maire](http://ttic.uchicago.edu/~mmaire/) ,	[Charless Fowlkes](http://www.ics.uci.edu/~fowlkes/) , 	[Jitendra Malik](http://people.eecs.berkeley.edu/~malik/) <Br>
-**[Pages]**  https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html 
+**[Pages]**  https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html  <Br>
 **[Reference]** http://blog.csdn.net/nature_XD/article/details/53375344?locationNum=9&fps=1 <Br>
 **[Description]** <Br>
 1) gPb(Global Probability of Boundary):由mPb和sPb组成
