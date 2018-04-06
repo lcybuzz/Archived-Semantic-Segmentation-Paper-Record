@@ -15,11 +15,11 @@
 
 ## Semantic Segmentation
 
-### **FCN ★★★ **
+### **FCN ★★★**
 **[Paper]** Learning a Deep Convolutional Network for Image Super-Resolution <Br>
 **[Year]** CVPR 2015<Br>
 **[Authors]** Evan Shelhamer, Jonathan Long, Trevor Darrell<Br>
-**[Pages] **<Br>
+**[Pages]**<Br>
 	 https://github.com/shelhamer/fcn.berkeleyvision.org (official)<Br>
 	 https://github.com/MarvinTeichmann/tensorflow-fcn (tensorflow)<Br>
 	 https://github.com/wkentaro/pytorch-fcn (pytorch)<Br>
@@ -29,11 +29,11 @@
 3) 特征图通过deconvolution（初始为bilinear interpolation)上采样，恢复为原来的分辨率
 4) 使用skip connection改善coarse segmentation maps
 	 
-### **U-Net ★ **
+### **U-Net ★**
 **[Paper]** U-Net: Convolutional Networks for Biomedical Image Segmentation<Br>
 **[Year]** MICCAI 2015<Br>
 **[Authors]** 	Olaf Ronneberge, Philipp Fischer, 	Thomas Brox<Br>
-**[Pages] **<Br>
+**[Pages]**<Br>
 	https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/ <Br>
 	https://github.com/orobix/retina-unet <Br>
 **[Description]**<Br>
@@ -54,7 +54,7 @@
 **[Paper]**  Multi-Scale Context Aggregation By Dilated Convolutions<Br>
 **[Year]** ICLR 2016<Br>
 **[Authors]** 	[Fisher Yu](http://www.yf.io/)  ,	[Vladlen Koltun](http://vladlen.info/)<Br>
-**[Pages] ** https://github.com/fyu/dilation <Br>
+**[Pages]** https://github.com/fyu/dilation <Br>
 **[Description]**<Br>
 1) 系统使用了dilated convulution，其实现已被Caffe收录
 	 
@@ -62,7 +62,7 @@
 **[Paper]** Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs<Br>
 **[Year]** ICLR 2015<Br>
 **[Authors]** [Liang-Chieh Chen](http://liangchiehchen.com/), George Papandreou, Iasonas Kokkinos, Kevin Murphy, Alan L. Yuille<Br>
-**[Pages] **https://bitbucket.org/deeplab/deeplab-public<Br>
+**[Pages]**https://bitbucket.org/deeplab/deeplab-public<Br>
 **[Description]**    <Br>
 1) 在保证感受野大小的同时，输出dense feature。做法是把VGG16后两个pool stride设置为1，用Hole算法(也就是Dilation卷积)控制感受野范围
 2) 输出用全局CRF后处理，一元项为pixel的概率，二元项为当前pixel与图像中除自己外的每个pixel的相似度，考虑颜色和位置，使用高斯核。全连接CRF参考[Efficient Inference in Fully Connected CRFs with Gaussian Edge Potentials](http://vladlen.info/publications/efficient-inference-in-fully-connected-crfs-with-gaussian-edge-potentials/)
@@ -76,7 +76,7 @@
 **[Paper]** DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs<Br>
 **[Year]** arXiv 2016<Br>
 **[Authors]** [Liang-Chieh Chen](http://liangchiehchen.com/), George Papandreou, Iasonas Kokkinos, Kevin Murphy, Alan L. Yuille<Br>
-**[Pages] **<Br><Br>
+**[Pages]**<Br>
 	 http://liangchiehchen.com/projects/DeepLab.html<Br>
 	 https://github.com/DrSleep/tensorflow-deeplab-resnet (tensorflow)<Br>
 	 https://github.com/isht7/pytorch-deeplab-resnet (pytorch)<Br>
@@ -87,7 +87,7 @@
 **[Paper]** Rethinking Atrous Convolution for Semantic Image Segmentation<Br>
 **[Year]** arXiv 1706<Br>
 **[Authors]** [Liang-Chieh Chen](http://liangchiehchen.com/), George Papandreou, Florian Schroff, Hartwig Adam<Br>
-**[Pages] ** https://github.com/tensorflow/models/tree/master/research/deeplab<Br>
+**[Pages]** https://github.com/tensorflow/models/tree/master/research/deeplab<Br>
 **[Description]** <Br>
 1) 使用串联和并行的atrous cov，使用bn，结构优化，达到了soa的精度(080116)
 
@@ -95,7 +95,7 @@
 **[Paper]** Rethinking Atrous Convolution for Semantic Image Segmentation<Br>
 **[Year]** arXiv 2017<Br>
 **[Authors]** [Liang-Chieh Chen](http://liangchiehchen.com/), Yukun Zhu, George Papandreou, Florian Schroff, Hartwig Adam<Br>
-**[Pages] ** https://github.com/tensorflow/models/tree/master/research/deeplab <Br>
+**[Pages]** https://github.com/tensorflow/models/tree/master/research/deeplab <Br>
 **[Description]** <Br>
 1) 在DeepLab-V3作为encoder的基础上, 加入了一个简单的decoder, 而不是直接上采样; 采用Xception作为backbone
 2) VOC上分割任务达到soa (0800314), 效果好
