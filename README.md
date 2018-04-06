@@ -9,7 +9,7 @@
 - [Traditional Classical Methods](#traditional-classical-methods)
 - [Datasets](#datasets)
 - [Leaderboards](#leaderboards)
-- [Sources & lists](#sources-lists)
+- [Sources&Lists](#sources-lists)
 
 # Deep Learning Methods
 
@@ -46,7 +46,7 @@
 **[Paper]** Feedforward semantic segmentation with zoom-out features<Br>
 **[Year]** CVPR 2015<Br>
 **[Authors]** Mohammadreza Mostajabi, Payman Yadollahpour, Gregory Shakhnarovich<Br>
-**[Pages]**https://bitbucket.org/m_mostajabi/zoom-out-release <Br>
+**[Pages]** https://bitbucket.org/m_mostajabi/zoom-out-release <Br>
 **[Description]**<Br>
 1) 以超像素为最小单位，逐步zoom out提取更大尺度的信息，zoom out特征是从CNN不同层提取的特征得到的
 2) 特征在超像素的范围内进行average pooling，并concat不同level的特征得到该超像素最后的特征向量。用样本集中每一类出现频率的倒数加权loss。
@@ -63,7 +63,7 @@
 **[Paper]** Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs<Br>
 **[Year]** ICLR 2015<Br>
 **[Authors]** [Liang-Chieh Chen](http://liangchiehchen.com/), George Papandreou, Iasonas Kokkinos, Kevin Murphy, Alan L. Yuille<Br>
-**[Pages]**https://bitbucket.org/deeplab/deeplab-public<Br>
+**[Pages]** https://bitbucket.org/deeplab/deeplab-public<Br>
 **[Description]**    <Br>
 1) 在保证感受野大小的同时，输出dense feature。做法是把VGG16后两个pool stride设置为1，用Hole算法(也就是Dilation卷积)控制感受野范围
 2) 输出用全局CRF后处理，一元项为pixel的概率，二元项为当前pixel与图像中除自己外的每个pixel的相似度，考虑颜色和位置，使用高斯核。全连接CRF参考[Efficient Inference in Fully Connected CRFs with Gaussian Edge Potentials](http://vladlen.info/publications/efficient-inference-in-fully-connected-crfs-with-gaussian-edge-potentials/)
@@ -277,7 +277,7 @@
 [ILSVRC2016](http://image-net.org/challenges/LSVRC/2016/results)  <Br>
 
 
-# Sources & lists<Br>
+# Sources&Lists<Br>
 https://handong1587.github.io/deep_learning/2015/10/09/segmentation.html <Br>
 https://github.com/mrgloom/awesome-semantic-segmentation <Br>
 
