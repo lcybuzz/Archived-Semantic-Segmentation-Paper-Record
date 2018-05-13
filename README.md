@@ -192,6 +192,17 @@
 2) RefineNet前半部分为multi-resolution fusion, 类似于UNet, decoder的每一级模块都利用了对应的encoder模块的信息;
 3) RefineNet后半部分为Chained residual pooling, 目的是"capture background context from a large image region".
 
+### **GCN ★**
+**[Paper]** Large Kernel Matters—— Improve Semantic Segmentation by Global Convolution <Br>
+**[Year]** CVPR 2017 <Br>
+**[Authors]**  	[Peng Chao](http://www.pengchao.org/), [Xiangyu Zhang](https://scholar.google.ca/citations?user=yuB-cfoAAAAJ&hl=zh-CN&oi=sra) [Gang Yu](http://www.skicyyu.org/), Guiming Luo, [Jian Sun](http://www.jiansun.org/)  <Br>
+**[Pages]**  <Br>
+**[Description]** <Br>
+1) 文章认为, segmentation包括localization和classification两部分, 分类需要全局信息, localization需要保证feature map的分辨率以保证空间准确度, 因此二者存在矛盾. 本文提出的解决办法就是用large kernel, 既可以保持分辨率, 又能近似densely connections between feature maps and per-pixel classifiers; <Br>
+2) 文中使用k*1+1*k和1*k+k*1代替k*k的大kernel. 引入boundary refinement模块, 使用残差结构, 捕捉边界信息; <Br>
+3) 只根据实验说明提出的模型由于k*k kernel和多个小kernel堆叠的策略, 但是并没什么理论支持; <Br>
+4) 一点不明白: 为什么提出的基于残差结构的BR可以model the boundary alignment? <Br>
+
 ### **PixelNet ★**
 **[Paper]** Representation of the pixels, by the pixels, and for the pixels <Br>
 **[Year]** TPAMI 2017 <Br>
