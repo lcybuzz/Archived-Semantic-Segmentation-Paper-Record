@@ -212,6 +212,14 @@
 1) 粗读. 使用hypercolumn思想, 速度快. 适用于segmentation, 边缘检测, normal estimation等low-level到high-level的多种问题.
 2) hypercolumn即: 对于一个pixel, 将每一层feature map中其对应位置的feature连接起来组成一个vector, 用MLP对该vector分类.
 3) 文中提出, 训练时 just sampling a small number of pixels per image is sufficient for learning. 这样一个mini-batch里就可以从多张图片中采样, 增加了diversity.
+
+### **LinkNet ☆**
+**[Paper]** LinkNet: Exploiting Encoder Representations for Efficient Semantic Segmentation <Br>
+**[Year]** arXiv 1707 <Br>
+**[Authors]**  	[Abhishek Chaurasia](https://codeac29.github.io/),	[Eugenio Culurciello](http://e-lab.github.io/)<Br>
+**[Pages]**  https://codeac29.github.io/projects/linknet/ <Br>
+**[Description]** <Br>
+1) 还没读, 大致是一个类似U-Net的结构, 速度快 <Br>
 	
 ### SDN ★
 **[Paper]** Stacked Deconvolutional Network for Semantic Segmentation  <Br>
