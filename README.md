@@ -5,7 +5,7 @@
   - [Semantic Segmentation](#semantic-segmentation)
   - [Weakly Supervision](#weakly-supervision)
   - [Self-supervision](#self-supervision)
-  - [Other Interesting Methods](#other-interesting-methods)
+  - [Other Interesting Papers](#other-interesting-papers)
 - [Traditional Classical Methods](#traditional-classical-methods)
 - [Datasets](#datasets)
 - [Leaderboards](#leaderboards)
@@ -263,7 +263,14 @@
 3) 对自监督了解不够深入, 看代码有助理解. segmentation部分采用的hypercolumn方法论文中貌似没仔细说, 以后可以再研究研究.
 
 
-## Other Interesting Methods
+## Other Interesting Papers
+### *Deep Learning for Semantic Part Segmentation with High-Level Guidance* ★
+**[Paper]** Deep Learning for Semantic Part Segmentation with High-Level Guidance <Br>
+**[Year]** ICLR 2016 <Br>
+**[Author]** [Stavros Tsogkas](http://tsogkas.github.io/),[Iasonas Kokkinos](http://www0.cs.ucl.ac.uk/staff/I.Kokkinos/), [George Papandreou](http://ttic.uchicago.edu/~gpapan/), [Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi/) <Br>
+**[Pages]** <Br>
+**[Description]** <Br>
+1) 不太懂, 涉及到RBM <Br>
 
 ### COB ★
 **[Paper]** Convolutional Oriented Boundaries <Br>
