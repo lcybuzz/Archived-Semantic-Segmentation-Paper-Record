@@ -260,7 +260,7 @@
 **[Description]** <Br>
 1) self-supervision可分为proxy stage和fine-tuning stage两个阶段. 先用无需标签数据的proxy task(如图像上色)进行预训练, 学到某种语义特征, 再用少量的标记数据进行微调. 但由于proxy task和target task之间存在semantic gap, 自监督方法性能明显较监督方法差.
 2) 论文提出了"mix-and-match"策略, 利用少数标记数据提升自监督预训练网络的性能. mix step: 从不同图像中随机提取patch. match step: 在训练时通过on-the-fly的方式构建graph, 并生成triplet, triplet包括anchor , positive, negative patch三个元素. 据此可定义一triplet loss, 鼓励相同类别的patch更相似, 不同类别的patch差别更大.
-3) 对自监督了解不够深入, 看代码有助理解. segmentation部分采用的hypercolumn方法论文中貌似没仔细说, 以后可以再研究研究.
+3) 对自监督了解不够深入, 看代码有助理解. segmentation部分采用的hypercolumn方法论文中貌似没仔细说, 以后可以再研究研究.<Br>
 
 
 ## Other Interesting Papers
