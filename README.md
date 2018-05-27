@@ -13,12 +13,12 @@
 - Semantic Segmentation<Br>
 	- ★★★ <Br>
 **FCN**, 
-	- ★★
-**DeepLab**, **DeepLab-V3+**, **SegNet**, **FoveaNet**, **PSPNet**, **RefineNet**
-	- ★
-**U-Net**, **zoom-out**, **Dilated Convolution**, **DeepLab-V2**, **DeepLab-V3**, **DeconvNet**, **Piecewise CRF**, **ENet**, **ParseNet**
-	- ♥
-**CRFasRNN**, **GCN**, **PixelNet**, **LinkNet**, **SDN**
+	- ★★  <Br>
+**DeepLab**, **DeepLab-V3+**, **SegNet**, **FoveaNet**, **PSPNet**, **RefineNet**  <Br>
+	- ★  <Br>
+**U-Net**, **zoom-out**, **Dilated Convolution**, **DeepLab-V2**, **DeepLab-V3**, **DeconvNet**, **Piecewise CRF**, **ENet**, **ParseNet**  <Br>
+	- ♥  <Br>
+**CRFasRNN**, **GCN**, **PixelNet**, **LinkNet**, **SDN**  <Br>
 
 # Deep Learning Methods
 
