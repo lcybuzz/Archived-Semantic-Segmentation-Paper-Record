@@ -3,7 +3,7 @@
 # Table of Contents
 - [Deep Learning Methods](#deep-learning-methods)
   - [Semantic Segmentation](#semantic-segmentation)
-  - [Weakly Supervision](#weakly-supervision)
+  - [Weakly/Self - Supervision](#weakly-self-supervision)
   - [Self-supervision](#self-supervision)
   - [Other Interesting Papers](#other-interesting-papers)
 - [Traditional Classical Methods](#traditional-classical-methods)
