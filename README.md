@@ -10,12 +10,12 @@
 - [Leaderboards](#leaderboards)
 - [Sources-Lists](#sources-lists)
 # Quick Link
-- ★★★
-[FCN](#fcn), 
+- ★★★ <Br>
+**FCN**, 
 - ★★
-[DeepLab](#DeepLab), [DeepLab-V3+](#DeepLab-V3+), [SegNet](#SegNet)
+[DeepLab](#DeepLab), [DeepLab-V3+](#DeepLab-V3+), [SegNet](#SegNet), [FoveaNet], [PSPNet], [refineNet]
 - ★
-[U-Net](#u-net), [zoom-out](#zoom-out), [Dilated Convolution](#Dilated-Convolution), [DeepLab-V2](#DeepLab-V2), [DeepLab-V3](#DeepLab-V3), [DeconvNet](#DeconvNet), [Piecewise CRF](#Piecewise-CRF)
+[U-Net](#u-net), [zoom-out](#zoom-out), [Dilated Convolution](#Dilated-Convolution), [DeepLab-V2](#DeepLab-V2), [DeepLab-V3](#DeepLab-V3), [DeconvNet](#DeconvNet), [Piecewise CRF](#Piecewise-CRF), ENet, ParseNet
 - ♥
 [CRFasRNN](#CRFasRNN), 
 
