@@ -231,7 +231,7 @@
 2) 以DenseNet为基础, 构建了stacked的encoder-decoder模型, 论文中认为这能更好的捕捉multi-scale context. 网络充满了inter和intra的unit connections, 并加入了hierarchical supervisions, 使非常深的SDN能够成功训练.
 
 
-## Weakly Supervision
+## Weakly/Self - Supervision
 
 ### ***Image-level to Pixel-level Labeling* ★** <Br>
 **[Paper]** From Image-level to Pixel-level Labeling with Convolutional Networks <Br>
@@ -264,14 +264,6 @@
 
 
 ## Other Interesting Papers
-### *Deep Learning for Semantic Part Segmentation with High-Level Guidance* ★
-**[Paper]** Deep Learning for Semantic Part Segmentation with High-Level Guidance <Br>
-**[Year]** ICLR 2016 <Br>
-**[Author]** [Stavros Tsogkas](http://tsogkas.github.io/),[Iasonas Kokkinos](http://www0.cs.ucl.ac.uk/staff/I.Kokkinos/), [George Papandreou](http://ttic.uchicago.edu/~gpapan/), [Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi/) <Br>
-**[Pages]** <Br>
-**[Description]** <Br>
-1) 不太懂, 涉及到RBM <Br>
-
 ### COB ★
 **[Paper]** Convolutional Oriented Boundaries <Br>
 **[Year]** ECCV 2016 <Br>
