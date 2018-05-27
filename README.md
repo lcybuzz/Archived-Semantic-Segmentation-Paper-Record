@@ -18,7 +18,7 @@
 	- ★  <Br>
 **U-Net**, **zoom-out**, **Dilated Convolution**, **DeepLab-V2**, **DeepLab-V3**, **DeconvNet**, **Piecewise CRF**, **ENet**, **ParseNet**  <Br>
 	- ♥  <Br>
-**CRFasRNN**, **GCN**, **PixelNet**, **LinkNet**, **SDN**  <Br>
+**CRFasRNN**, **GCN**, **PixelNet**, **LinkNet**, **SDN**, **FC-DenseNet**  <Br>
 
 # Deep Learning Methods
 
