@@ -3,7 +3,7 @@
 # Table of Contents
 - [Deep Learning Methods](#deep-learning-methods)
   - [Semantic Segmentation](#semantic-segmentation)
-  - [Weakly/Self - Supervision](#weakly-self-supervision)
+  - [Weakly Self - Supervision](#weakly-self-supervision)
   - [Self-supervision](#self-supervision)
   - [Other Interesting Papers](#other-interesting-papers)
 - [Traditional Classical Methods](#traditional-classical-methods)
@@ -231,7 +231,7 @@
 2) 以DenseNet为基础, 构建了stacked的encoder-decoder模型, 论文中认为这能更好的捕捉multi-scale context. 网络充满了inter和intra的unit connections, 并加入了hierarchical supervisions, 使非常深的SDN能够成功训练.
 
 
-## Weakly/Self - Supervision
+## Weakly Self - Supervision
 
 ### ***Image-level to Pixel-level Labeling* ★** <Br>
 **[Paper]** From Image-level to Pixel-level Labeling with Convolutional Networks <Br>
