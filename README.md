@@ -3,8 +3,8 @@
 # Table of Contents
 - [Deep Learning Methods](#deep-learning-methods)
   - [Semantic Segmentation](#semantic-segmentation)
-  - [Weakly Self-supervision](#weaklyself-supervision)
-  - [Weakly Self-supervision](#self-supervision)
+  - [Weakly supervision](#weaklyself-supervision)
+  - [Self-supervision](#self-supervision)
   - [Other Interesting Papers](#other-interesting-papers)
 - [Traditional Classical Methods](#traditional-classical-methods)
 - [Datasets](#datasets)
@@ -231,7 +231,7 @@
 2) 以DenseNet为基础, 构建了stacked的encoder-decoder模型, 论文中认为这能更好的捕捉multi-scale context. 网络充满了inter和intra的unit connections, 并加入了hierarchical supervisions, 使非常深的SDN能够成功训练.
 
 
-## Weakly Self-supervision
+## Weakly supervision
 
 ### ***Image-level to Pixel-level Labeling* ★** <Br>
 **[Paper]** From Image-level to Pixel-level Labeling with Convolutional Networks <Br>
@@ -251,7 +251,7 @@
 1) 弱监督语义分割，用bounding box结合region proposal(MCG)生成初始groundtruth mask，再交替更新分割结果和mask.
 
 
-## Weakly Self-supervision
+## Self-supervision
 ### **Mix-and-Match ★** 
 **[Paper]** Mix-and-Match Tuning for Self-Supervised Semantic Segmentation <Br>
 **[Year]**  AAAI 2018 <Br>
