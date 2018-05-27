@@ -4,7 +4,7 @@
 - [Deep Learning Methods](#deep-learning-methods)
   - [Semantic Segmentation](#semantic-segmentation)
   - [Weakly Self-supervision](#weaklyself-supervision)
-  - [Self-supervision](#self-supervision)
+  - [Weakly Self-supervision](#self-supervision)
   - [Other Interesting Papers](#other-interesting-papers)
 - [Traditional Classical Methods](#traditional-classical-methods)
 - [Datasets](#datasets)
@@ -251,7 +251,7 @@
 1) 弱监督语义分割，用bounding box结合region proposal(MCG)生成初始groundtruth mask，再交替更新分割结果和mask.
 
 
-## Self-supervision
+## Weakly Self-supervision
 ### **Mix-and-Match ★** 
 **[Paper]** Mix-and-Match Tuning for Self-Supervised Semantic Segmentation <Br>
 **[Year]**  AAAI 2018 <Br>
