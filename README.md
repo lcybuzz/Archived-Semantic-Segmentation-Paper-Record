@@ -9,7 +9,7 @@
 - [Datasets](#datasets)
 - [Leaderboards](#leaderboards)
 - [Sources-Lists](#sources-lists)
-# Quick Link
+# Rank
 - Semantic Segmentation<Br>
 	- ★★★ <Br>
 **FCN**, 
@@ -232,13 +232,18 @@
 	
 ### SDN ★
 **[Paper]** Stacked Deconvolutional Network for Semantic Segmentation  <Br>
+**[Year]** CVPRW 2017<Br>
+**[Author]** Simon J´egou, Michal Drozdza, [David Vazquez](http://www.david-vazquez.com/), [Adriana Romero](https://sites.google.com/site/adriromsor/), [Yoshua Bengio](http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html)<Br>
+**[Pages]**  https://github.com/SimJeg/FC-DenseNet<Br>
+**[Description]**  <Br>
+1) DenseNet + 类似U-Net的机构. 大致浏览 <Br>
+	
+### FC-DenseNet ★
+**[Paper]** The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation  <Br>
 **[Year]** arXiv 1708 <Br>
 **[Author]** 	Jun Fu, Jing Liu, Yuhang Wang, Hanqing Lu  <Br>
 **[Pages]**  <Br>
 **[Description]**  <Br>
-1) 粗读. 效果好, 未开源.
-2) 以DenseNet为基础, 构建了stacked的encoder-decoder模型, 论文中认为这能更好的捕捉multi-scale context. 网络充满了inter和intra的unit connections, 并加入了hierarchical supervisions, 使非常深的SDN能够成功训练.
-
 
 ## Weakly Self supervision
 
