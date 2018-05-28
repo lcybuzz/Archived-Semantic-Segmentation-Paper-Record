@@ -102,8 +102,8 @@
 1) 使用串联和并行的atrous cov，使用bn，结构优化，达到了soa的精度(080116)
 
 ### **DeepLab-V3+ ★☆** 
-**[Paper]** Rethinking Atrous Convolution for Semantic Image Segmentation<Br>
-**[Year]** arXiv 2017<Br>
+**[Paper]** Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation <Br>
+**[Year]** arXiv 1802<Br>
 **[Authors]** [Liang-Chieh Chen](http://liangchiehchen.com/), Yukun Zhu, George Papandreou, Florian Schroff, Hartwig Adam<Br>
 **[Pages]** https://github.com/tensorflow/models/tree/master/research/deeplab <Br>
 **[Description]** <Br>
