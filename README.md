@@ -245,6 +245,14 @@
 **[Pages]**  <Br>
 **[Description]**  <Br>
 
+### *Dense Decoder Shortcut Connections* ★
+**[Paper]** Dense Decoder Shortcut Connections for Single-Pass Semantic Segmentation <Br>
+**[Year]** CVPR 2018 <Br>
+**[Author]** [Piotr Bilinski](http://www.piotr-bilinski.com/), [Victor Prisacariu](https://scholar.google.com/citations?user=szL1daIAAAAJ&hl=en) <Br>
+**[Pages]**  <Br>
+**[Description]**  <Br>
+1. 粗读. 一种encoder-decoder的语义分割模型, 大致就是skip-connection和dense-connection, 并用ResNeXt做backbone, 思路没什么新奇的. 在设计网络时, 加入了很多对multi-scale的支持, 因此文中生成他们的网络只需要single-scale inference. <Br> 
+
 ## Weakly Self supervision
 
 ### ***Image-level to Pixel-level Labeling* ★** <Br>
