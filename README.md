@@ -12,13 +12,13 @@
 # Rank
 - Semantic Segmentation<Br>
 	- ★★★ <Br>
-**FCN**, 
+**[FCN]**, 
 	- ★★  <Br>
-**DeepLab**, **DeepLab-V3+**, **SegNet**, **FoveaNet**, **PSPNet**, **RefineNet**  <Br>
+**[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**,   <Br>
 	- ★  <Br>
-**U-Net**, **zoom-out**, **Dilated Convolution**, **DeepLab-V2**, **DeepLab-V3**, **DeconvNet**, **Piecewise CRF**, **ENet**, **ParseNet**  <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**  <Br>
 	- ♥  <Br>
-**CRFasRNN**, **GCN**, **PixelNet**, **LinkNet**, **SDN**, **FC-DenseNet**  <Br>
+**[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 
 # Deep Learning Methods
 
@@ -211,6 +211,17 @@
 2) 文中使用k*1+1*k和1*k+k*1代替k*k的大kernel. 引入boundary refinement模块, 使用残差结构, 捕捉边界信息; <Br>
 3) 只根据实验说明提出的模型由于k*k kernel和多个小kernel堆叠的策略, 但是并没什么理论支持; <Br>
 4) 一点不明白: 为什么提出的基于残差结构的BR可以model the boundary alignment? <Br>
+
+### **FastMask ★**
+**[Paper]** FastMask: Segment Multi-scale Object Candidates in One Shot <Br>
+**[Year]** CVPR 2017 Spotlight  <Br>
+**[Authors]** [Hexiang Hu](http://hexianghu.com/), [Shiyi Lan](https://voidrank.github.io/), Yuning Jiang, Zhimin Cao, [Fei Sha](http://www-bcf.usc.edu/~feisha/) <Br>
+**[Pages]**  https://github.com/voidrank/FastMask <Br>
+**[Description]**<Br>
+1) 粗读. 提出了一个body, neck, head的one-shot模型. 
+2) body net部分进行特征提取. 提取到的特征组成多尺度的特征金字塔, 分别送入共享参数的neck module提取multi-scale特征, neck module为residual neck. 得到的特征图进行降维后提取dense sliding window, sliding windows经batch normalization后送入head module, head module为attention head 
+3) neck module部分以2为步长对feature map进行下采样, 可能导致尺度过于稀疏. 因此提出two-stream FastMask architecture, 使scale更密集.
+
 
 ### **PixelNet ★**
 **[Paper]** Representation of the pixels, by the pixels, and for the pixels <Br>
