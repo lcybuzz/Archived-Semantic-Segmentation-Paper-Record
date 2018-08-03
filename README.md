@@ -212,7 +212,7 @@
 **[Paper]** Large Kernel Matters—— Improve Semantic Segmentation by Global Convolution <Br>
 **[Year]** CVPR 2017 <Br>
 **[Authors]**  	[Peng Chao](http://www.pengchao.org/), [Xiangyu Zhang](https://scholar.google.ca/citations?user=yuB-cfoAAAAJ&hl=zh-CN&oi=sra) [Gang Yu](http://www.skicyyu.org/), Guiming Luo, [Jian Sun](http://www.jiansun.org/)  <Br>
-**[Pages]**  <Br>
+**[Pages]**  https://github.com/ycszen/pytorch-segmentation (Unofficial)<Br>
 **[Description]** <Br>
 1) 文章认为, segmentation包括localization和classification两部分, 分类需要全局信息, localization需要保证feature map的分辨率以保证空间准确度, 因此二者存在矛盾. 本文提出的解决办法就是用large kernel, 既可以保持分辨率, 又能近似densely connections between feature maps and per-pixel classifiers; <Br>
 2) 文中使用k*1+1*k和1*k+k*1代替k*k的大kernel. 引入boundary refinement模块, 使用残差结构, 捕捉边界信息; <Br>
@@ -270,6 +270,19 @@
 **[Pages]**  <Br>
 **[Description]**  <Br>
 1. 粗读. 一种encoder-decoder的语义分割模型, 大致就是skip-connection和dense-connection, 并用ResNeXt做backbone, 思路没什么新奇的. 在设计网络时, 加入了很多对multi-scale的支持, 因此文中生成他们的网络只需要single-scale inference. <Br> 
+
+### DFN ★☆
+**[Paper]** Learning a Discriminative Feature Network for Semantic Segmentation <Br>
+**[Year]** CVPR 2018 <Br>
+**[Author]** [Changqian Yu](http://changqianyu.me/), [Jingbo Wang](https://github.com/wangjingbo1219), [Chao Peng](http://www.pengchao.org/), [Changxin Gao](https://sites.google.com/site/changxingao), [Gang Yu](http://www.skicyyu.org/), Nong Sang <Br>
+**[Pages]**  https://github.com/whitesockcat/Discriminative-Feature-Network (Unofficial)<Br>
+**[Description]**  <Br>
+1) 本文的目的是解决intra-class inconsistency和inter-class indistinction两个, 为此设计了Smooth Network和Border Network, 为实现这两个网络, 又设计了Refinement Residual Block(RRB)和Channel Attention Block (CAB).<Br>
+2) Smooth Network是本文的重点. 文中认为类内不一致主要是由于缺乏上下文信息, 因此设计了从global pooling开始自顶向下的逐层refine, 利用来自上层的全局信息得到channel attention vector作为guidance, 使下层选出最有用的channel. <Br>
+3) Border Network就是一有前面几层concat的encoder和decode结构. 文中说是给高层特征提供边界信息, 其实对最后结果作用不大. <Br>
+4) 本篇paper中的RRB, CAB结构上虽然没有很新颖, 但把它们用到要解决的问题上并且得到很好的效果还是很厉害的. 另外paper中对问题和自己工作的阐述很值得学习. 两个问题: 本文提出的border network来解决inter-class indistinction, 说服力不太强; Smooth Network是用上下文信息去选择channel, 没有考虑feature的空间修正, 但不能保证仅靠选特定的feature就能解决intra-class inconsistency问题. <Br>
+	
+	
 
 ## Weakly Self supervision
 
