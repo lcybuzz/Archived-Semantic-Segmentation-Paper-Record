@@ -14,7 +14,7 @@
 	- ★★★ <Br>
 **[FCN]**, 
 	- ★★  <Br>
-**[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**,   <Br>
+**[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**  <Br>
 	- ★  <Br>
 **[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**  <Br>
 	- ♥  <Br>
