@@ -16,7 +16,7 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**  <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**  <Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 
@@ -110,7 +110,7 @@
 1) 在DeepLab-V3作为encoder的基础上, 加入了一个简单的decoder, 而不是直接上采样; 采用Xception作为backbone
 2) VOC上分割任务达到soa (0800314), 效果好
 	
-### ***Attention to Scale*** 
+### ***Attention to Scale ★*** 
 **[Paper]** Attention to Scale: Scale-aware Semantic Image Segmentation  <Br>
 **[Year]** CVPR 2016<Br>
 **[Authors]** [Liang-Chieh Chen](http://liangchiehchen.com/), Yi Yang, Jiang Wang, Wei Xu,  Alan L. Yuille<Br>
