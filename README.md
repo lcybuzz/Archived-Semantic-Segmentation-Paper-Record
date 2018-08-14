@@ -218,7 +218,7 @@
 **[Description]** <Br>
 1) 文章认为, segmentation包括localization和classification两部分, 分类需要全局信息, localization需要保证feature map的分辨率以保证空间准确度, 因此二者存在矛盾. 本文提出的解决办法就是用large kernel, 既可以保持分辨率, 又能近似densely connections between feature maps and per-pixel classifiers; <Br>
 2) 文中使用k*1+1*k和1*k+k*1代替k*k的大kernel. 引入boundary refinement模块, 使用残差结构, 捕捉边界信息; <Br>
-3) 只根据实验说明提出的模型由于k*k kernel和多个小kernel堆叠的策略, 但是并没什么理论支持; <Br>
+3) 只根据实验说明提出的模型优于k*k kernel和多个小kernel堆叠的策略, 但是并没什么理论支持; <Br>
 4) 一点不明白: 为什么提出的基于残差结构的BR可以model the boundary alignment? <Br>
 
 ### **FastMask ★**
@@ -256,7 +256,7 @@
 **[Author]** Simon J´egou, Michal Drozdza, [David Vazquez](http://www.david-vazquez.com/), [Adriana Romero](https://sites.google.com/site/adriromsor/), [Yoshua Bengio](http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html)<Br>
 **[Pages]**  https://github.com/SimJeg/FC-DenseNet<Br>
 **[Description]**  <Br>
-1) DenseNet + 类似U-Net的机构. 大致浏览 <Br>
+1) DenseNet + 类似U-Net的结构. 大致浏览 <Br>
 	
 ### FC-DenseNet ★
 **[Paper]** The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation  <Br>
