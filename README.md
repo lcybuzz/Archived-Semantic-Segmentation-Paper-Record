@@ -16,7 +16,7 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**  <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**  <Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 
@@ -283,8 +283,16 @@
 2) Smooth Network是本文的重点. 文中认为类内不一致主要是由于缺乏上下文信息, 因此设计了从global pooling开始自顶向下的逐层refine, 利用来自上层的全局信息得到channel attention vector作为guidance, 使下层选出最有用的channel. <Br>
 3) Border Network就是一有前面几层concat的encoder和decode结构. 文中说是给高层特征提供边界信息, 其实对最后结果作用不大. <Br>
 4) 本篇paper中的RRB, CAB结构上虽然没有很新颖, 但把它们用到要解决的问题上并且得到很好的效果还是很厉害的. 另外paper中对问题和自己工作的阐述很值得学习. 两个问题: 本文提出的border network来解决inter-class indistinction, 说服力不太强; Smooth Network是用上下文信息去选择channel, 没有考虑feature的空间修正, 但不能保证仅靠选特定的feature就能解决intra-class inconsistency问题. <Br>
-	
-	
+
+### *Adapt Structured Output Space* ★
+**[Paper]** Learning to Adapt Structured Output Space for Semantic Segmentation <Br>
+**[Year]** CVPR 2018 Spotlight <Br>
+**[Author]** [Yi-Hsuan Tsai](https://sites.google.com/site/yihsuantsai/home), [Wei-Chih Hung](https://hfslyc.github.io/), [Samuel Schulter](https://samschulter.github.io/), [Kihyuk Sohn](https://sites.google.com/site/kihyuksml/), [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/index.html), Manmohan Chandraker  <Br>
+**[Pages]**  https://github.com/wasidennis/AdaptSegNet<Br>
+**[Description]**  <Br>
+1) 提出了一种基于对抗学习的用于语义分割的domain adaptation方法, 在GTA5上训练CityScape测试, 效果不错. <Br>
+2) 在输出层和中间的一个特征层上做multi-level的对抗训练, 使target domain的预测结果逼近于source domain的预测结果. <Br>
+
 
 ## Weakly Self supervision
 
