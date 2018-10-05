@@ -68,6 +68,16 @@
 **[Description]**<Br>
 1) 系统使用了dilated convulution，其实现已被Caffe收录
 	 
+### **Understanding Convolution ★☆** 
+**[Paper]** Understanding Convolution for Semantic Segmentation<Br>
+**[Year]** WACV 2018<Br>
+**[Authors]** [Panqu Wang](http://acsweb.ucsd.edu/~pawang/homepage_PhD/index.html), Pengfei Chen, Ye Yuan, Ding Liu, Zehua Huang, [Xiaodi Hou](http://www.houxiaodi.com/), [Garrison Cottrell](https://cseweb.ucsd.edu/~gary/)<Br>
+**[Pages]** https://github.com/TuSimple/TuSimple-DUC <Br>
+**[Description]**<Br>
+1) 针对语义分割任务, 为encoding和decoding分别设计了DUC和HDC两个结构, 其设计有被deeplab v3借鉴. <Br>
+2) decoding阶段: DUC(dense upsampling convolution), 类似于超分辨和instance分割的一些做法, 令最后阶段特征图的每个channel代表上采样后相应位置的预测结果. <Br>
+3) encoding阶段: HDC(hybrid dilated convolution), 交替地进行不同dilation rate的卷积, 避免棋盘效应. <Br>
+	
 ### **DeepLab ★★** 
 **[Paper]** Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs<Br>
 **[Year]** ICLR 2015<Br>
