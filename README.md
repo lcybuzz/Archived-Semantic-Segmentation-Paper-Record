@@ -14,7 +14,7 @@
 	- ★★★ <Br>
 **[FCN]**, 
 	- ★★  <Br>
-**[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**  <Br>
+**[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**  <Br>
 	- ★  <Br>
 **[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**  <Br>
 	- ♥  <Br>
@@ -302,6 +302,17 @@
 **[Description]**  <Br>
 1) 提出了一种基于对抗学习的用于语义分割的domain adaptation方法, 在GTA5上训练CityScape测试, 效果不错. <Br>
 2) 在输出层和中间的一个特征层上做multi-level的对抗训练, 使target domain的预测结果逼近于source domain的预测结果. <Br>
+
+### EncNet ★★
+**[Paper]** Context Encoding for Semantic Segmentation <Br>
+**[Year]** CVPR 2018 Oral<Br>
+**[Author]** [Hang Zhang](http://hangzh.com/), [Kristin Dana](http://eceweb1.rutgers.edu/vision/dana.html), [Jianping Shi](http://shijianping.me/), [Zhongyue Zhang](http://zhongyuezhang.com/), [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/), [Ambrish Tyagi](https://scholar.google.com/citations?user=GaSWCoUAAAAJ&hl=en), [Amit Agrawal](http://www.amitkagrawal.com/)<Br>
+**[Pages]**  <Br>
+	https://hangzhang.org/PyTorch-Encoding/ <Br>
+	https://github.com/zhanghang1989/PyTorch-Encoding<Br>
+**[Description]**  <Br>
+1) 提出了基于Deep Ten的Context Encoding Module, 嵌入语义分割网络中, 提高对global context information的利用. <Br>
+2) 虽然网络的创新性工作不多, 但把VLAD一类的思想用来挖掘语义分割任务中的上下文信息, 思路还是值得借鉴的. <Br>
 
 
 ## Weakly Self supervision
