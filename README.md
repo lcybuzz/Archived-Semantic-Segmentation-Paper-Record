@@ -16,7 +16,7 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**  <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**  <Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 
@@ -314,6 +314,14 @@
 1) 提出了基于Deep Ten的Context Encoding Module, 嵌入语义分割网络中, 提高对global context information的利用. <Br>
 2) 虽然网络的创新性工作不多, 但把VLAD一类的思想用来挖掘语义分割任务中的上下文信息, 思路还是值得借鉴的. <Br>
 
+### CCNet ★☆
+**[Paper]** CCNet: Criss-Cross Attention for Semantic Segmentation <Br>
+**[Year]** arXiv 1811 <Br>
+**[Author]** [Zilong Huang](https://speedinghzl.github.io/), [Xinggang Wang](http://xinggangw.info/), Lichao Huang, Chang Huang, [Yunchao Wei](https://weiyc.github.io/), Wenyu Liu<Br>
+**[Pages]** https://github.com/speedinghzl/CCNet <Br>
+**[Description]**  <Br>
+1) 在何凯明等提出的Non-Local的基础上, 提出了一个recurrent的十字形attention形式, 并采用了残差+attention的结构. 方法相比于Non-local和许多其它attention方法, 计算成本低, 且效果不错. <Br>
+2) recurrent的次数设为2, 因为文中指出, 两次十字形的attention计算已经可以对图像中的任意两点建立连接. 实验表明, 这种二次循环的十字形attention的确可以捕捉到有用的信息, 且增大递归次数对性能提升作用不大. <Br>
 
 ## Weakly Self supervision
 
