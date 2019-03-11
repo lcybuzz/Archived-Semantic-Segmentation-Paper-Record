@@ -16,11 +16,11 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**  <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**  <Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
-**Enet**
+**Enet**, **Fast-SCNN**
 	
 # Deep Learning Methods
 
@@ -354,7 +354,15 @@
 2) 论文提出了"mix-and-match"策略, 利用少数标记数据提升自监督预训练网络的性能. mix step: 从不同图像中随机提取patch. match step: 在训练时通过on-the-fly的方式构建graph, 并生成triplet, triplet包括anchor , positive, negative patch三个元素. 据此可定义一triplet loss, 鼓励相同类别的patch更相似, 不同类别的patch差别更大.
 3) 对自监督了解不够深入, 看代码有助理解. segmentation部分采用的hypercolumn方法论文中貌似没仔细说, 以后可以再研究研究.<Br>
 
-
+### **Fast-SCNN ★** 
+**[Paper]** Fast-SCNN: Fast Semantic Segmentation Network <Br>
+**[Year]**  arXiv 1902 <Br>
+**[Authors]** 	Rudra PK Poudel, Stephan Liwicki, [Roberto Cipolla](https://mi.eng.cam.ac.uk/~cipolla/）<Br>
+**[Pages]**  <Br>
+**[Description]** <Br>
+1) 采用two branch和encoder-decoder的思路做real time的语义分割. 在大图像上(1027*2018)速度很快(123fps), 性能与sota相比有差距. 
+2) 结构: 先用3个卷积降采样8倍, 从此引出一skip connection负责保留空间细节, 另一分支作为feature extractor由若干bottleneck和金字塔池化组成, 最后通过sum将特征融合. 大量使用depthwise separable convolution提速
+	
 ## Other Interesting Papers
 ### COB ★
 **[Paper]** Convolutional Oriented Boundaries <Br>
