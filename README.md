@@ -3,6 +3,7 @@
 # Table of Contents
 - [Deep Learning Methods](#deep-learning-methods)
   - [Semantic Segmentation](#semantic-segmentation)
+  - [Real Time](#real-time)
   - [Weakly Self supervision](#weakly-self-supervision)
   - [Other Interesting Papers](#other-interesting-papers)
 - [Traditional Classical Methods](#traditional-classical-methods)
@@ -325,6 +326,17 @@
 1) 在何凯明等提出的Non-Local的基础上, 提出了一个recurrent的十字形attention形式, 并采用了残差+attention的结构. 方法相比于Non-local和许多其它attention方法, 计算成本低, 且效果不错. <Br>
 2) recurrent的次数设为2, 因为文中指出, 两次十字形的attention计算已经可以对图像中的任意两点建立连接. 实验表明, 这种二次循环的十字形attention的确可以捕捉到有用的信息, 且增大递归次数对性能提升作用不大. <Br>
 
+## Real Time
+### **Fast-SCNN ★** 
+**[Paper]** Fast-SCNN: Fast Semantic Segmentation Network <Br>
+**[Year]**  arXiv 1902 <Br>
+**[Authors]** 	Rudra PK Poudel, Stephan Liwicki, [Roberto Cipolla](https://mi.eng.cam.ac.uk/~cipolla/)<Br>
+**[Pages]**  <Br>
+**[Description]** <Br>
+1) 采用two branch和encoder-decoder的思路做real time的语义分割. 在大图像上(1027*2018)速度很快(123fps), 性能与sota相比有差距. 
+2) 结构: 先用3个卷积降采样8倍, 从此引出一skip connection负责保留空间细节, 另一分支作为feature extractor由若干bottleneck和金字塔池化组成, 最后通过sum将特征融合. 大量使用depthwise separable convolution提速
+	
+
 ## Weakly Self supervision
 
 ### ***Image-level to Pixel-level Labeling* ★** <Br>
@@ -353,15 +365,6 @@
 1) self-supervision可分为proxy stage和fine-tuning stage两个阶段. 先用无需标签数据的proxy task(如图像上色)进行预训练, 学到某种语义特征, 再用少量的标记数据进行微调. 但由于proxy task和target task之间存在semantic gap, 自监督方法性能明显较监督方法差.
 2) 论文提出了"mix-and-match"策略, 利用少数标记数据提升自监督预训练网络的性能. mix step: 从不同图像中随机提取patch. match step: 在训练时通过on-the-fly的方式构建graph, 并生成triplet, triplet包括anchor , positive, negative patch三个元素. 据此可定义一triplet loss, 鼓励相同类别的patch更相似, 不同类别的patch差别更大.
 3) 对自监督了解不够深入, 看代码有助理解. segmentation部分采用的hypercolumn方法论文中貌似没仔细说, 以后可以再研究研究.<Br>
-
-### **Fast-SCNN ★** 
-**[Paper]** Fast-SCNN: Fast Semantic Segmentation Network <Br>
-**[Year]**  arXiv 1902 <Br>
-**[Authors]** 	Rudra PK Poudel, Stephan Liwicki, [Roberto Cipolla](https://mi.eng.cam.ac.uk/~cipolla/）<Br>
-**[Pages]**  <Br>
-**[Description]** <Br>
-1) 采用two branch和encoder-decoder的思路做real time的语义分割. 在大图像上(1027*2018)速度很快(123fps), 性能与sota相比有差距. 
-2) 结构: 先用3个卷积降采样8倍, 从此引出一skip connection负责保留空间细节, 另一分支作为feature extractor由若干bottleneck和金字塔池化组成, 最后通过sum将特征融合. 大量使用depthwise separable convolution提速
 	
 ## Other Interesting Papers
 ### COB ★
