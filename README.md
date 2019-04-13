@@ -3,9 +3,10 @@
 # Table of Contents
 - [Deep Learning Methods](#deep-learning-methods)
   - [Semantic Segmentation](#semantic-segmentation)
-  - [Real Time](#real-time)
   - [Weakly Self supervision](#weakly-self-supervision)
   - [Other Interesting Papers](#other-interesting-papers)
+- [Rank](#rank)
+- [Real Time Methods](#real-time)
 - [Traditional Classical Methods](#traditional-classical-methods)
 - [Datasets](#datasets)
 - [Leaderboards](#leaderboards)
@@ -21,7 +22,7 @@
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
-**Enet**, **Fast-SCNN**
+**Enet**, **Fast-SCNN**, **DFANet*
 	
 # Deep Learning Methods
 
@@ -335,6 +336,15 @@
 1) 采用two branch和encoder-decoder的思路做real time的语义分割. 在大图像上(1027*2018)速度很快(123fps), 性能与sota相比有差距. 
 2) 结构: 先用3个卷积降采样8倍, 从此引出一skip connection负责保留空间细节, 另一分支作为feature extractor由若干bottleneck和金字塔池化组成, 最后通过sum将特征融合. 大量使用depthwise separable convolution提速
 	
+### **DFANet ★** 
+**[Paper]** DFANet: Deep Feature Aggregation for Real-Time Semantic Segmentation <Br>
+**[Year]**  CVPR 2019 <Br>
+**[Authors]** 	Hanchao Li, Pengfei Xiong∗, Haoqiang Fan, [Jian Sun](http://www.jiansun.org/)<Br>
+**[Pages]**  <Br>
+**[Description]** <Br>	
+1) 旷世提出的一个real time语义分割方法, 在性能和速度上达到不错的平衡, 可保持关注. <Br>
+2) 采用多分辨率网络聚合的策略, 挖掘不同尺度的上下文信息, 聚合的创新之处在于同时使用了sub-network层级的聚合和sub-stage(即网络内部的feature)层级的聚合. decoder阶段利用各分辨率特征的信息. Backbone是简化版的Xception. <Br>
+
 
 ## Weakly Self supervision
 
