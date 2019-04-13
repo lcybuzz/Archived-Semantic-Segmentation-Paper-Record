@@ -22,7 +22,7 @@
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
-**Enet**, **Fast-SCNN**, **DFANet*
+**Enet**, **Fast-SCNN**, **DFANet**
 	
 # Deep Learning Methods
 
