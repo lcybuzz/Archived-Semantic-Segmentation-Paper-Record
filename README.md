@@ -18,7 +18,7 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**  <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DeeperLab]**  <Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
@@ -346,9 +346,10 @@
 2) 采用多分辨率网络聚合的策略, 挖掘不同尺度的上下文信息, 聚合的创新之处在于同时使用了sub-network层级的聚合和sub-stage(即网络内部的feature)层级的聚合. decoder阶段利用各分辨率特征的信息. Backbone是简化版的Xception. <Br>
 
 ## Panoptic Segmentation
-**[Paper]** DeeperLab: Single-Shot Image Parser <Br>
+### **DeeperLab ★** 
+**[Paper]** DeeperLab: Single-Shot Image Parser<Br>
 **[Year]**  CVPR 2019 <Br>
-**[Authors]** 	Tien-Ju Yang, Maxwell D. Collins, Yukun Zhu, Jyh-Jing Hwang, Ting Liu, Xiao Zhang, Vivienne Sze, George Papandreou, Liang-Chieh Chen<Br>
+**[Authors]** 	Tien-Ju Yang, Maxwell D. Collins, [Yukun Zhu](http://www.cs.toronto.edu/~yukun/), Jyh-Jing Hwang, [Ting Liu](http://www.tliu.org/), Xiao Zhang, Vivienne Sze, [George Papandreou](https://ttic.uchicago.edu/~gpapan/), [Liang-Chieh](http://liangchiehchen.com/) Chen<Br>
 **[Pages]**  <Br>
 **[Description]** <Br>
 1) 大致浏览, XX Lab又一弹, 借鉴了Xception和MobileNet等网络的backbone设计思路, 使用了两个分支分别做semantic和instance的分割. <Br> 
