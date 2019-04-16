@@ -345,6 +345,13 @@
 1) 旷世提出的一个real time语义分割方法, 在性能和速度上达到不错的平衡, 可保持关注. <Br>
 2) 采用多分辨率网络聚合的策略, 挖掘不同尺度的上下文信息, 聚合的创新之处在于同时使用了sub-network层级的聚合和sub-stage(即网络内部的feature)层级的聚合. decoder阶段利用各分辨率特征的信息. Backbone是简化版的Xception. <Br>
 
+## Panoptic Segmentation
+**[Paper]** DeeperLab: Single-Shot Image Parser <Br>
+**[Year]**  CVPR 2019 <Br>
+**[Authors]** 	Tien-Ju Yang, Maxwell D. Collins, Yukun Zhu, Jyh-Jing Hwang, Ting Liu, Xiao Zhang, Vivienne Sze, George Papandreou, Liang-Chieh Chen<Br>
+**[Pages]**  <Br>
+**[Description]** <Br>
+1) 大致浏览, XX Lab又一弹, 借鉴了Xception和MobileNet等网络的backbone设计思路, 使用了两个分支分别做semantic和instance的分割. <Br> 
 
 ## Weakly Self supervision
 
