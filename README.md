@@ -3,6 +3,7 @@
 # Table of Contents
 - [Deep Learning Methods](#deep-learning-methods)
   - [Semantic Segmentation](#semantic-segmentation)
+  - [Panoptic Segmentation](#panoptic-segmentation)
   - [Weakly Self supervision](#weakly-self-supervision)
   - [Other Interesting Papers](#other-interesting-papers)
 - [Rank](#rank)
