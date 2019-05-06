@@ -329,9 +329,9 @@
 2) recurrent的次数设为2, 因为文中指出, 两次十字形的attention计算已经可以对图像中的任意两点建立连接. 实验表明, 这种二次循环的十字形attention的确可以捕捉到有用的信息, 且增大递归次数对性能提升作用不大. <Br>
 
 ### **ICNet ★** 
-**[Paper]** Fast-SCNN: Fast Semantic Segmentation Network <Br>
-**[Year]**  arXiv 1902 <Br>
-**[Authors]** 	Hengshuang Zhao, Xiaojuan Qi, Xiaoyong Shen, Jianping Shi, Jiaya Jia<Br>
+**[Paper]** ICNet for Real-Time Semantic Segmentation on High-Resolution Images <Br>
+**[Year]**  ECCV 2018 <Br>
+**[Authors]** [Hengshuang Zhao](https://hszhao.github.io/), [Xiaojuan Qi](https://xjqi.github.io/), [Xiaoyong Shen](http://xiaoyongshen.me/), [Jianping Shi](http://shijianping.me/), [Jiaya Jia](http://jiaya.me/)<Br>
 **[Pages]**  <Br>
 https://github.com/hszhao/ICNet <Br>
 https://github.com/hellochick/ICNet-tensorflow <Br>
