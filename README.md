@@ -23,7 +23,7 @@
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
-**Enet**, **ICNet**, **Fast-SCNN**, **DFANet**
+**Enet**, **ICNet**, **Fast-SCNN**, **DFANet**, **ShuffleNetV2+DPC**
 	
 # Deep Learning Methods
 
@@ -356,6 +356,14 @@ https://github.com/hellochick/ICNet-tensorflow <Br>
 **[Description]** <Br>	
 1) 旷世提出的一个real time语义分割方法, 在性能和速度上达到不错的平衡, 可保持关注. <Br>
 2) 采用多分辨率网络聚合的策略, 挖掘不同尺度的上下文信息, 聚合的创新之处在于同时使用了sub-network层级的聚合和sub-stage(即网络内部的feature)层级的聚合. decoder阶段利用各分辨率特征的信息. Backbone是简化版的Xception. <Br>
+
+### **ShuffleNetV2+DPC ★** 
+**[Paper]** An efficient solution for semantic segmentation: ShuffleNet V2 with atrous separable convolutions <Br>
+**[Year]**  arXiv 1902 <Br>
+**[Authors]** Sercan Turkmen, Janne Heikkila<Br>
+**[Pages]**  https://github.com/sercant/mobile-segmentation<Br>
+**[Description]** <Br>	
+1) 基于Deeplab+DPC, 用ShuffleNet v2做backbone. <Br>
 
 ## Panoptic Segmentation
 ### **DeeperLab ★** 
