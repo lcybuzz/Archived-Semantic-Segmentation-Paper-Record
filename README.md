@@ -19,11 +19,11 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DeeperLab]**, **[ICNet]**  <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**  <Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
-**Enet**, **ICNet**, **Fast-SCNN**, **DFANet**, **ShuffleNetV2+DPC**
+**Enet**, **ICNet**, **BiSeNet**, **Fast-SCNN**, **DFANet**, **ShuffleNetV2+DPC**
 	
 # Deep Learning Methods
 
@@ -339,19 +339,32 @@ https://github.com/hellochick/ICNet-tensorflow <Br>
 1) 粗读, 多分辨率输入网络级联的实时语义分割算法, 是多分辨率特征融合做轻量级语义分割模型的代表方法之一. <Br>
 2) 输入图像以原尺寸, 1/2, 1/4三个分辨率输入三个分支, 小分辨率分支层数较多, 负责提取全局信息; 大分辨率网络层数少, 节省计算成本. 设计了融合模块融合各分辨率的特征. 对每个分支的输出均计算loss. <Br>
 
+### **BiSeNet ★☆** 
+**[Paper]** BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation <Br>
+**[Year]**  ECCV 2018 <Br>
+**[Authors]** Changqian Yu, Jingbo Wang, Chao Peng, Changxin Gao, Gang Yu, Nong Sang<Br>
+**[Pages]** <Br>
+https://github.com/ycszen/TorchSeg (3rd party)<Br>
+https://github.com/ooooverflow/BiSeNet (3rd party)<Br>
+https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
+**[Description]** <Br>	
+1) 实时语义分割, 空间细节特征和上下文语义特征融合的典型方法, 在时间和性能上取得了很好的平衡. <Br>
+2) 分为spatial path和context path两支, spatial部分用3个conv下采样8倍, 保持空间细节信息; context部分使用xception39或resnet18为backbone, 设计了类似SENet的attention进行refine; 最后特征融合时设计了类似于residual attention的融合模块. 使用了auxiliary loss. 
+
+	
 ### **Fast-SCNN ★** 
 **[Paper]** Fast-SCNN: Fast Semantic Segmentation Network <Br>
 **[Year]**  arXiv 1902 <Br>
 **[Authors]** 	Rudra PK Poudel, Stephan Liwicki, [Roberto Cipolla](https://mi.eng.cam.ac.uk/~cipolla/)<Br>
 **[Pages]**  <Br>
 **[Description]** <Br>
-1) 采用two branch和encoder-decoder的思路做real time的语义分割. 在大图像上(1027*2018)速度很快(123fps), 性能与sota相比有差距. 
+1) 采用two branch和encoder-decoder的思路做real time的语义分割, 整体思路与BiSeNet非常相似. 在大图像上(1027*2018)速度很快(123fps), 性能与sota相比有差距. 
 2) 结构: 先用3个卷积降采样8倍, 从此引出一skip connection负责保留空间细节, 另一分支作为feature extractor由若干bottleneck和金字塔池化组成, 最后通过sum将特征融合. 大量使用depthwise separable convolution提速
 	
 ### **DFANet ★** 
 **[Paper]** DFANet: Deep Feature Aggregation for Real-Time Semantic Segmentation <Br>
 **[Year]**  CVPR 2019 <Br>
-**[Authors]** 	Hanchao Li, Pengfei Xiong∗, Haoqiang Fan, [Jian Sun](http://www.jiansun.org/)<Br>
+**[Authors]** 	Hanchao Li, Pengfei Xiong, Haoqiang Fan, [Jian Sun](http://www.jiansun.org/)<Br>
 **[Pages]**  <Br>
 **[Description]** <Br>	
 1) 旷世提出的一个real time语义分割方法, 在性能和速度上达到不错的平衡, 可保持关注. <Br>
@@ -365,6 +378,7 @@ https://github.com/hellochick/ICNet-tensorflow <Br>
 **[Description]** <Br>	
 1) 基于Deeplab+DPC, 用ShuffleNet v2做backbone. <Br>
 
+	
 ## Panoptic Segmentation
 ### **DeeperLab ★** 
 **[Paper]** DeeperLab: Single-Shot Image Parser<Br>
