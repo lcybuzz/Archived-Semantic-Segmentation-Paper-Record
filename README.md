@@ -19,11 +19,11 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**  <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**  <Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
-**Enet**, **ICNet**, **BiSeNet**, **Fast-SCNN**, **DFANet**, **ShuffleNetV2+DPC**
+**Enet**, **ICNet**, **BiSeNet**, **Fast-SCNN**, **DFANet**, **ShuffleNetV2+DPC**, **ISCTF**
 	
 # Deep Learning Methods
 
@@ -279,6 +279,16 @@
 **[Author]** 	Jun Fu, Jing Liu, Yuhang Wang, Hanqing Lu  <Br>
 **[Pages]**  <Br>
 **[Description]**  <Br>
+
+### ISCTF ☆
+**[Paper]** Real-time Semantic Image Segmentation via Spatial Sparsity  <Br>
+**[Year]** arXiv 1712 <Br>
+**[Author]** Zifeng Wu, [Chunhua Shen](https://cs.adelaide.edu.au/~chhshen/), [Anton van den Hengel](https://cs.adelaide.edu.au/~hengel/)  <Br>
+**[Pages]**  <Br>
+**[Description]**  <Br>
+1) 粗读, 实时语义分割方法. 提出了一个由低分辨率图像产生稀疏weight map, 引导高分辨率图只处理少数区域, 以达到减小计算量的同时保持边缘精度的目的.<Br>
+2) 得到spatial sparsity部分以及从原图以什么尺度crop部分没细看. 算法看上去实现可能有些繁琐<Br>
+3) 从实验大致来看, 提出的基于sparisity的方案似乎带来的提升有限. 另外在速度和性能上与18年以来的real time方案相比, 似乎占优势. 但是论文的思路很有意 思, 可以日后持续关注. <Br>
 
 ### *Dense Decoder Shortcut Connections* ★
 **[Paper]** Dense Decoder Shortcut Connections for Single-Pass Semantic Segmentation <Br>
