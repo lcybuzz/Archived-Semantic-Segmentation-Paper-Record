@@ -4,6 +4,7 @@
 - [Deep Learning Methods](#deep-learning-methods)
   - [Semantic Segmentation](#semantic-segmentation)
   - [Panoptic Segmentation](#panoptic-segmentation)
+  - [Foreground-background Segmenation](#foreground-background-segmenation)
   - [Weakly Self supervision](#weakly-self-supervision)
   - [Other Interesting Papers](#other-interesting-papers)
 - [Rank](#rank)
@@ -19,7 +20,7 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**<Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**<Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
@@ -404,6 +405,19 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 **[Pages]**  <Br>
 **[Description]** <Br>
 1) 大致浏览, XX Lab又一弹, 借鉴了Xception和MobileNet等网络的backbone设计思路, 使用了两个分支分别做semantic和instance的分割. <Br> 
+
+
+## Foreground-background Segmenation
+
+### **Pixel Objectness ★** <Br>
+**[Paper]** Pixel Objectness: Learning to Segment Generic Objects Automatically in Images and Videos <Br>
+**[Year]** TPAMI 2018 <Br>
+**[Authors]** [Bo Xiong](https://www.cs.utexas.edu/~bxiong/publication.html), [Suyog Jain](http://www.cs.utexas.edu/~suyog/), [Kristen Grauman](http://www.cs.utexas.edu/~grauman/) <Br>
+**[Pages]** http://vision.cs.utexas.edu/projects/pixelobjectness/ <Br>
+**[Description]** <Br>
+1) 大致浏览, 提出pixel objectness这一术语表示得到图像和视频中generic object二类分割图的过程. 提出基于CNN的网络, 对图像和视频中的目标进行分割, 该模型对没见过的物体也很鲁棒.
+2) 大段论述了他们的方法为什么合理, 比如用ImageNet预训练模型里面已经包含类别信息了之类的囧, 没仔细看. 
+	
 
 ## Weakly Self supervision
 
