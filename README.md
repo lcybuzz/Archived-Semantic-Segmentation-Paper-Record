@@ -447,6 +447,15 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 1) self-supervision可分为proxy stage和fine-tuning stage两个阶段. 先用无需标签数据的proxy task(如图像上色)进行预训练, 学到某种语义特征, 再用少量的标记数据进行微调. 但由于proxy task和target task之间存在semantic gap, 自监督方法性能明显较监督方法差.
 2) 论文提出了"mix-and-match"策略, 利用少数标记数据提升自监督预训练网络的性能. mix step: 从不同图像中随机提取patch. match step: 在训练时通过on-the-fly的方式构建graph, 并生成triplet, triplet包括anchor , positive, negative patch三个元素. 据此可定义一triplet loss, 鼓励相同类别的patch更相似, 不同类别的patch差别更大.
 3) 对自监督了解不够深入, 看代码有助理解. segmentation部分采用的hypercolumn方法论文中貌似没仔细说, 以后可以再研究研究.<Br>
+
+### ***Bidirectional Learning* ★** 
+**[Paper]** Bidirectional Learning for Domain Adaptation of Semantic Segmentation <Br>
+**[Year]** arXiv 1904 <Br>
+**[Authors]** 	Yunsheng Li, Lu Yuan, [Nuno Vasconcelos](http://www.svcl.ucsd.edu/~nuno/)  <Br>
+**[Pages]** https://github.com/liyunsheng13/BDL   <Br>
+**[Description]** <Br>
+1) 提出了一个双向的语义分割domain adaptation方法, 可以用于没有任何target domain真值的情况, 从实验结果看效果不错. <Br>
+2) 目前常用的的步骤是学习两个分离的网络, 首先是使用GAN学习source到target的变换, 以减小两个domain的gap, 然后用变换了的source图像做分割. 本文提出的所谓双向是指两个阶段的网络会互相作用以提升对方的性能, 另外提出了一个所谓的自监督方法, 用高置信度的target分割结果作为真值. 具体loss论文中描述的很清楚. <Br>
 	
 ## Other Interesting Papers
 ### COB ★
