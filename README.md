@@ -254,7 +254,9 @@
 **[Pages]**  https://liuziwei7.github.io/projects/LayerCascade.html <Br>
 **[Description]**<Br>
 1) 多个小模型级联, 不同阶段处理不同难度的样本, 是一类典型的节省计算的方法. 本文提出一种层级联的语义分割方法, 把网络中不同层视为不同stage, 达到近似于模型级联的效果, 提升了性能, 降低了计算量. <Br>
-2) 将backbone的不同阶段
+2) 将backbone的不同阶段(3阶段)拉出来做预测, 把其中置信度低于一定阈值的区域作为目标, 下一阶段只对其卷积, 其余位置直接置0. 最后把不同阶段的结果合成成最后的输出. <Br>
+3) 感觉思路很直观清晰, 或许可以在后续的工作中参考. 有个疑问是: 上下文信息在语义分割中应该是很重要的, 这种只对region进行处理的方案会不会导致全局信息不足? 
+	
 ### **PixelNet ★**
 **[Paper]** Representation of the pixels, by the pixels, and for the pixels <Br>
 **[Year]** TPAMI 2017 <Br>
@@ -296,7 +298,7 @@
 **[Description]**  <Br>
 1) 粗读, 实时语义分割方法. 提出了一个由低分辨率图像产生稀疏weight map, 引导高分辨率图只处理少数区域, 以达到减小计算量的同时保持边缘精度的目的.<Br>
 2) 得到spatial sparsity部分以及从原图以什么尺度crop部分没细看. 算法看上去实现可能有些繁琐<Br>
-3) 从实验大致来看, 提出的基于sparisity的方案似乎带来的提升有限. 另外在速度和性能上与18年以来的real time方案相比, 似乎占优势. 但是论文的思路很有意 思, 可以日后持续关注. <Br>
+3) 从实验大致来看, 提出的基于sparisity的方案似乎带来的提升有限. 另外在速度和性能上与18年以来的real time方案相比, 似乎不占优势. 但是论文的思路很有意 思, 可以日后持续关注. <Br>
 
 ### *Dense Decoder Shortcut Connections* ★
 **[Paper]** Dense Decoder Shortcut Connections for Single-Pass Semantic Segmentation <Br>
