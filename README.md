@@ -432,6 +432,16 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 1) 一种weakly supervised方法，用图像类别标签训练分割模型，分割中每个类别的特征图用log-sum-exp变换为分类任务中每个类别的概率，通过最小化分类的loss优化分割模型
 2) 推断时为抑制False Positive现象，使用了两种分割先验：Image-Level Prior(分类概率对分割加权)和Smooth Prior(超像素，bounding box candidates，无监督分割MCG)。
 
+### ***Bidirectional Learning* ★** <Br>
+**[Paper]** Bidirectional Learning for Domain Adaptation of Semantic Segmentation <Br>
+**[Year]** CVPR 2019 <Br>
+**[Authors]** Yunsheng Li], Lu Yuan, [Nuno Vasconcelos](http://www.svcl.ucsd.edu/~nuno/) <Br>
+**[Pages]** <Br>
+https://github.com/liyunsheng13/BDL <Br>
+**[Description]** <Br>
+1) 粗度. 与之前的许多工作一样, 分为image translation和segmentation两部分, 不过采用了类似cycleGAN的双向思路, 让两个部分间可以相互refine. <Br>
+2) image translation部分用segmentation网络提取特征计算perceptual loss. segmentation部分提出了一个所谓的self-supervised方案, 将置信度高的target image分割结果直接作为真值, 参与后面的分割loss计算. <Br>
+	
 ### **BoxSup ★**
 **[Paper]** BoxSup: Exploiting Bounding Boxes to Supervise Convolutional Networks for Semantic Segmentation <Br>
 **[Year]** ICCV 2015 <Br>
