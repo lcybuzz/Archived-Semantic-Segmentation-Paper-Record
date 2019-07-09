@@ -20,7 +20,7 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]** <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]**, **[JPU]** <Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
@@ -398,6 +398,17 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 **[Description]** <Br>	
 1) 基于Deeplab+DPC, 用ShuffleNet v2做backbone. <Br>
 
+### **JPU ★** 
+**[Paper]** FastFCN: Rethinking Dilated Convolution in the Backbone for Semantic Segmentation <Br>
+**[Year]**  arXiv 1903 <Br>
+**[Authors]** [Huikai Wu](http://wuhuikai.me/), Junge Zhang, Kaiqi Huang, Kongming Liang, Yizhou Yu<Br>
+**[Pages]** <Br>
+	http://wuhuikai.me/FastFCNProject/ <Br>
+	https://github.com/wuhuikai/FastFCN <Br>
+**[Description]** <Br>
+1) 粗读. dilation卷积计算量很大, 本位利用所谓joint upsampling的思想, 找到一种更高效的提取高精度特征的方案以代替dilation. <Br>
+2) 前面论述很很多, 最后设计的JPU模块实际上就是一个类似于ASPP的结构, 只不过是利用了前三层的特征而不是一层. 感觉后面的方法和前面的叙述有些脱节, 可能是自己没完全理解. <Br>
+3) 实验结果上看, JPU和FPN结构相比性能和速度上非常接近.<Br>
 	
 ## Panoptic Segmentation
 ### **DeeperLab ★** 
