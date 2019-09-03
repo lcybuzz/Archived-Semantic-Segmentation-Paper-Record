@@ -18,7 +18,7 @@
 	- ★★★ <Br>
 **[FCN]**, 
 	- ★★  <Br>
-**[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**  <Br>
+**[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**, **[Gated-SCNN]**  <Br>
 	- ★  <Br>
 **[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]**, **[JPU]** <Br>
 	- ♥  <Br>
@@ -409,6 +409,19 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 1) 粗读. dilation卷积计算量很大, 本位利用所谓joint upsampling的思想, 找到一种更高效的提取高精度特征的方案以代替dilation. <Br>
 2) 前面论述很很多, 最后设计的JPU模块实际上就是一个类似于ASPP的结构, 只不过是利用了前三层的特征而不是一层. 感觉后面的方法和前面的叙述有些脱节, 可能是自己没完全理解. <Br>
 3) 实验结果上看, JPU和FPN结构相比性能和速度上非常接近.<Br>
+	
+### **Gated-SCNN ★☆** 
+**[Paper]** Gated-SCNN: Gated Shape CNNs for Semantic Segmentation <Br>
+**[Year]**  ICCV, 2019 <Br>
+**[Authors]** [Towaki Takikawa](https://tovacinni.github.io/), [David Acuna](http://www.cs.toronto.edu/~davidj/), [Varun Jampani](https://varunjampani.github.io/), [Sanja Fidler](http://www.cs.toronto.edu/~fidler/)<Br>
+**[Pages]** <Br>
+	https://nv-tlabs.github.io/GSCNN/ <Br>
+**[Description]** <Br>
+1) 提出一个双分支网络, 一个分支负责分割, 一个分支负责边缘检测, 最后将两分支融合生成最后的分割结果. <Br>
+2) 边缘检测部分, 使用Gated-Convolution, 让分割一支的high-level特征引导lower-level的边缘检测特征, 以去除noise. <Br>
+3) 使用dual task regularization, 目的是exploit the duality between semantic segmentation and semantic boundary prediction. <Br>
+4) 在语义分割中引入gated convolution作为一种gating mechanism的思路值得借鉴. 本方法在cityscapes上性能与DPC持平 <Br>
+	
 	
 ## Panoptic Segmentation
 ### **DeeperLab ★** 
