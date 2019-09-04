@@ -5,7 +5,7 @@
   - [Semantic Segmentation](#semantic-segmentation)
   - [Panoptic Segmentation](#panoptic-segmentation)
   - [Foreground-background Segmenation](#foreground-background-segmenation)
-  - [Weakly Self supervision](#weakly-self-supervision)
+  - [Transfer Learning](#transfer-learning)
   - [Other Interesting Papers](#other-interesting-papers)
 - [Rank](#rank)
 - [Real Time Methods](#real-time)
@@ -20,7 +20,7 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**, **[Gated-SCNN]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]**, **[JPU]** <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]**, **[JPU]**, **[Hierarchical Region Selection]** <Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
@@ -445,7 +445,7 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 2) 大段论述了他们的方法为什么合理, 比如用ImageNet预训练模型里面已经包含类别信息了之类的囧, 没仔细看. 
 	
 
-## Weakly Self supervision
+## Transfer Learning
 
 ### ***Image-level to Pixel-level Labeling* ★** <Br>
 **[Paper]** From Image-level to Pixel-level Labeling with Convolutional Networks <Br>
@@ -482,6 +482,17 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 **[Description]** <Br>
 1) 提出了一个双向的语义分割domain adaptation方法, 可以用于没有任何target domain真值的情况, 从实验结果看效果不错. <Br>
 2) 目前常用的的步骤是学习两个分离的网络, 首先是使用GAN学习source到target的变换, 以减小两个domain的gap, 然后用变换了的source图像做分割. 本文提出的所谓双向是指两个阶段的网络会互相作用以提升对方的性能, 另外提出了一个所谓的自监督方法, 用高置信度的target分割结果作为真值. 具体loss论文中描述的很清楚. <Br>
+	
+### ***Hierarchical Region Selection* ☆** 
+**[Paper]** Not All Areas Are Equal: Transfer Learning for Semantic Segmentation via Hierarchical Region Selectionn <Br>
+**[Year]** CVPR 2019 Oral <Br>
+**[Authors]** 	Ruoqi Sun, [Xinge Zhu](https://xingezhu.me/aboutme.html), Chongruo Wu, Chen Huang, [Jianping Shi](http://shijianping.me/pub.html), Lizhuang Ma <Br>
+**[Pages]**  <Br>
+**[Description]** <Br>	
+1) 提出一种针对语义分割的transfer learning方法, 从pixel, region, image三个尺度挖掘source样本中与target domain相似的部分用来训练, 以弥补source和target domain的gap. <Br>
+2) 学习了三个weight map分别代表pixel, region, image层面上source与target的相似程度, 三个map取平均候得到最后的weight map, 在计算source的loss时用该map对每个像素加权. 另外在encoder出来的特征后加一生成对抗网络, 帮助domain adaptation. <Br>
+3) 个人感觉作为一篇Oral来说有趣的地方并不多. 实验用VGG和FCN做backbone, 对比方法只用了transfer learning相关的几种方法, 性能与目前没有用transfer learning的SOTA方法比差距很大, 另外GAN似乎并没有提升性能. <Br>  
+	
 	
 ## Other Interesting Papers
 ### COB ★
