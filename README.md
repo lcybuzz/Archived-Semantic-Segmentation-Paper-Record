@@ -20,7 +20,7 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**, **[Gated-SCNN]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]**, **[JPU]**, **[Hierarchical Region Selection]**, **[CFNet]** <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]**, **[JPU]**, **[Hierarchical Region Selection]**, **[CFNet]**, **[DANet]** <Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
@@ -424,7 +424,7 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 
 ### **CFNet ★☆** 
 **[Paper]** Co-occurrent Features in Semantic Segmentation <Br>
-**[Year]**  CVPR, 2019 <Br>
+**[Year]**  CVPR 2019 <Br>
 **[Authors]** [Hang Zhang](https://hangzhang.org), [Han Zhang](http://paul.rutgers.edu/~hz138/), [Chenguang Wang](https://cgraywang.github.io/), [Junyuan Xie](https://scholar.google.com/citations?user=qJsC_XsAAAAJ&hl=en)<Br>
 **[Pages]**  <Br>
 **[Description]** <Br>
@@ -432,6 +432,14 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 2) CNN特征提取后, 分为三部分：co-occurrent概率计算, co-occurent context先验提取, global pooling. <Br>
 3) 个人水平有限, 感觉paper的论述有点不太清晰, 而且写作也是。。。  <Br>
 
+### **DANet ★☆** 
+**[Paper]** Dual Attention Network for Scene Segmentation <Br>
+**[Year]**  CVPR 2019 <Br>
+**[Authors]** Jun Fu, [Jing Liu](http://www.nlpr.ia.ac.cn/iva/liujing/index.html), Haijie Tian, [Yong Li](http://www.foreverlee.net/), Yongjun Bao, Zhiwei Fang,and Hanqing Lu<Br>
+**[Pages]**  https://github.com/junfu1115/DANet<Br>
+**[Description]** <Br>
+1) 大致浏览, 提出了一个包括position attention和channel attention的dual attention模块, 并在此基础上设计了语义分割网络DANet, 取得了还不错的效果. <Br>
+2) position attention就是计算两像素在channel维度上的相似度, channel attention就是计算两通道在空间维度上的相似度. 此处相似度都是通过计算內积得到的. <Br>
 	
 ## Panoptic Segmentation
 ### **DeeperLab ★** 
