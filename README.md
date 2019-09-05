@@ -5,7 +5,7 @@
   - [Semantic Segmentation](#semantic-segmentation)
   - [Panoptic Segmentation](#panoptic-segmentation)
   - [Foreground-background Segmenation](#foreground-background-segmenation)
-  - [Transfer Learning](#transfer-learning)
+  - [Transfer related](#transfer-related)
   - [Other Interesting Papers](#other-interesting-papers)
 - [Rank](#rank)
 - [Real Time Methods](#real-time)
@@ -445,7 +445,7 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 2) 大段论述了他们的方法为什么合理, 比如用ImageNet预训练模型里面已经包含类别信息了之类的囧, 没仔细看. 
 	
 
-## Transfer Learning
+## Transfer Related
 
 ### ***Image-level to Pixel-level Labeling* ★** <Br>
 **[Paper]** From Image-level to Pixel-level Labeling with Convolutional Networks <Br>
@@ -492,6 +492,15 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 1) 提出一种针对语义分割的transfer learning方法, 从pixel, region, image三个尺度挖掘source样本中与target domain相似的部分用来训练, 以弥补source和target domain的gap. <Br>
 2) 学习了三个weight map分别代表pixel, region, image层面上source与target的相似程度, 三个map取平均候得到最后的weight map, 在计算source的loss时用该map对每个像素加权. 另外在encoder出来的特征后加一生成对抗网络, 帮助domain adaptation. <Br>
 3) 个人感觉作为一篇Oral来说有趣的地方并不多. 实验用VGG和FCN做backbone, 对比方法只用了transfer learning相关的几种方法, 性能与目前没有用transfer learning的SOTA方法比差距很大, 另外GAN似乎并没有提升性能. <Br>  
+	
+### **SPNet** 
+**[Paper]** Semantic Projection Network for Zero- and Few-Label Semantic Segmentation <Br>
+**[Year]** CVPR 2019 <Br>
+**[Authors]** 	ongqin Xian, Subhabrata Choudhury, Yang He, Bernt Schiele, Zeynep Akata <Br>
+**[Pages]** https://github.com/subhc/SPNet <Br>
+**[Description]** <Br>		
+1) 基于word embeddings提出的针对无标签或少量标签样本的语义分割算法. <Br>
+2) 由CNN生成每个像素的embedding, 然后计算其与预先得到的class prototype矩阵的內积, 取最相似的类别作为该像素的类别. 该算法的核心是得到word embedding, 本文中是用已有算法(如word2vec)计算的. Inference时只要用感兴趣类别组成的embedding矩阵(见过或没见过的类别均可)去做projection即可. <Br>
 	
 	
 ## Other Interesting Papers
