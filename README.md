@@ -341,7 +341,7 @@
 
 ### CCNet ★☆
 **[Paper]** CCNet: Criss-Cross Attention for Semantic Segmentation <Br>
-**[Year]** arXiv 1811 <Br>
+**[Year]** ICCV 2019 <Br>
 **[Author]** [Zilong Huang](https://speedinghzl.github.io/), [Xinggang Wang](http://xinggangw.info/), Lichao Huang, Chang Huang, [Yunchao Wei](https://weiyc.github.io/), Wenyu Liu<Br>
 **[Pages]** https://github.com/speedinghzl/CCNet <Br>
 **[Description]**  <Br>
