@@ -20,7 +20,7 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**, **[Gated-SCNN]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]**, **[JPU]**, **[Hierarchical Region Selection]** <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]**, **[JPU]**, **[Hierarchical Region Selection]**, **[CFNet]** <Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
@@ -421,7 +421,17 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 2) 边缘检测部分, 使用Gated-Convolution, 让分割一支的high-level特征引导lower-level的边缘检测特征, 以去除noise. <Br>
 3) 使用dual task regularization, 目的是exploit the duality between semantic segmentation and semantic boundary prediction. <Br>
 4) 在语义分割中引入gated convolution作为一种gating mechanism的思路值得借鉴. 本方法在cityscapes上性能与DPC持平 <Br>
-	
+
+### **CFNet ★☆** 
+**[Paper]** Co-occurrent Features in Semantic Segmentation <Br>
+**[Year]**  CVPR, 2019 <Br>
+**[Authors]** [Hang Zhang](https://hangzhang.org), [Han Zhang](http://paul.rutgers.edu/~hz138/), [Chenguang Wang](https://cgraywang.github.io/), [Junyuan Xie](https://scholar.google.com/citations?user=qJsC_XsAAAAJ&hl=en)<Br>
+**[Pages]**  <Br>
+**[Description]** <Br>
+1) 通过计算target feature和其它feature的co-occurrence概率,去挖掘co-occurenct context information. 从报告的数据来看, 效果不错. <Br>
+2) CNN特征提取后, 分为三部分：co-occurrent概率计算, co-occurent context先验提取, global pooling. <Br>
+3) 个人水平有限, 感觉paper的论述有点不太清晰, 而且写作也是。。。  <Br>
+
 	
 ## Panoptic Segmentation
 ### **DeeperLab ★** 
