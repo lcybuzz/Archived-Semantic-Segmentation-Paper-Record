@@ -450,6 +450,27 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 **[Description]** <Br>	
 1) 提出了一个二阶段pixel像素分类的场景检测方法. 第一阶段用多个二分类器初步分类, 第二阶段对一阶段结果进行refine, 修正之前混淆的类别. <Br>
 2) 使用了一个variance-based regularization, 促使最后的类别间概率相差尽可能大. <Br>
+
+### **ADVENT** 
+**[Paper]** ADVENT: Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation<Br>
+**[Year]**  CVPR 2019 Oral<Br>
+**[Authors]** [Tuan-Hung Vu](https://tuanhungvu.github.io/), [Himalaya Jain](https://himalayajain.github.io/), [Maxime Bucher](https://maximebucher.github.io/), [Matthieu Cord](http://webia.lip6.fr/~cord/), [Patrick Pérez](https://ptrckprz.github.io/)<Br>
+**[Pages]**  https://github.com/valeoai/ADVENT<Br>
+**[Description]** <Br>	
+	
+### **ShelfNet ** 
+**[Paper]**  ShelfNet for fast semantic segmentation<Br>
+**[Year]** arXiv 1811<Br>
+**[Authors]** Juntang Zhuang, Junlin Yang, Lin Gu, Nicha Dvornek<Br>
+**[Pages]**  https://github.com/juntang-zhuang/ShelfNet <Br>
+**[Description]** <Br>	
+	
+### **SwiftNet ** 
+**[Paper]**  In Defense of Pre-trained ImageNet Architectures for Real-time Semantic Segmentation of Road-driving Images<Br>
+**[Year]** CVPR 2019 <Br>
+**[Authors]** Marin Oršić, [Ivan Kreš](https://ivankreso.github.io/), [Siniša Šegvić](http://www.zemris.fer.hr/~ssegvic/index_en.html), Petra Bevandić<Br>
+**[Pages]** https://github.com/orsic/swiftnet <Br>
+**[Description]** <Br>			
 	
 ## Panoptic Segmentation
 ### **DeeperLab ★** 
@@ -574,6 +595,8 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 [ADE20K](http://groups.csail.mit.edu/vision/datasets/ADE20K/) <Br>
 [MITScenceParsing](http://sceneparsing.csail.mit.edu/) <Br>
 [Cityscapes](https://www.cityscapes-dataset.com/) <Br>
+## 3D
+[PartNet](https://cs.stanford.edu/~kaichun/partnet/)
 
 
 # Leaderboards
