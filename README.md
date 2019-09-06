@@ -20,7 +20,7 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**, **[Gated-SCNN]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]**, **[JPU]**, **[Hierarchical Region Selection]**, **[CFNet]**, **[DANet]** <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]**, **[JPU]**, **[Hierarchical Region Selection]**, **[CFNet]**, **[DANet]**, **[Integrated Classification]** <Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
@@ -440,6 +440,15 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 **[Description]** <Br>
 1) 大致浏览, 提出了一个包括position attention和channel attention的dual attention模块, 并在此基础上设计了语义分割网络DANet, 取得了还不错的效果. <Br>
 2) position attention就是计算两像素在channel维度上的相似度, channel attention就是计算两通道在空间维度上的相似度. 此处相似度都是通过计算內积得到的. <Br>
+	
+### ***Integrated Classification* ★** 
+**[Paper]** Scene Parsing via Integrated Classification Model and Variance-Based Regularization <Br>
+**[Year]**  CVPR 2019 <Br>
+**[Authors]** Hengcan Shi, Hongliang Li, Qingbo Wu, Zichen Song<Br>
+**[Pages]**  https://github.com/shihengcan/ICM-matcaffe<Br>
+**[Description]** <Br>	
+1) 提出了一个二阶段pixel像素分类的场景检测方法. 第一阶段用多个二分类器初步分类, 第二阶段对一阶段结果进行refine, 修正之前混淆的类别. <Br>
+2) 使用了一个variance-based regularization, 促使最后的类别间概率相差尽可能大. <Br>
 	
 ## Panoptic Segmentation
 ### **DeeperLab ★** 
