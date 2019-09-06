@@ -6,6 +6,7 @@
   - [Panoptic Segmentation](#panoptic-segmentation)
   - [Foreground-background Segmenation](#foreground-background-segmenation)
   - [Transfer related](#transfer-related)
+  - [Knowledge distillation](#knowledge-distillation)
   - [Other Interesting Papers](#other-interesting-papers)
 - [Rank](#rank)
 - [Real Time Methods](#real-time)
@@ -520,16 +521,26 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 2) 学习了三个weight map分别代表pixel, region, image层面上source与target的相似程度, 三个map取平均候得到最后的weight map, 在计算source的loss时用该map对每个像素加权. 另外在encoder出来的特征后加一生成对抗网络, 帮助domain adaptation. <Br>
 3) 个人感觉作为一篇Oral来说有趣的地方并不多. 实验用VGG和FCN做backbone, 对比方法只用了transfer learning相关的几种方法, 性能与目前没有用transfer learning的SOTA方法比差距很大, 另外GAN似乎并没有提升性能. <Br>  
 	
-### **SPNet** 
+### **SPNet ★** 
 **[Paper]** Semantic Projection Network for Zero- and Few-Label Semantic Segmentation <Br>
 **[Year]** CVPR 2019 <Br>
-**[Authors]** 	ongqin Xian, Subhabrata Choudhury, Yang He, Bernt Schiele, Zeynep Akata <Br>
+**[Authors]** 	Yongqin Xian, Subhabrata Choudhury, Yang He, Bernt Schiele, Zeynep Akata <Br>
 **[Pages]** https://github.com/subhc/SPNet <Br>
 **[Description]** <Br>		
 1) 基于word embeddings提出的针对无标签或少量标签样本的语义分割算法. <Br>
 2) 由CNN生成每个像素的embedding, 然后计算其与预先得到的class prototype矩阵的內积, 取最相似的类别作为该像素的类别. 该算法的核心是得到word embedding, 本文中是用已有算法(如word2vec)计算的. Inference时只要用感兴趣类别组成的embedding矩阵(见过或没见过的类别均可)去做projection即可. <Br>
 	
-	
+## Knowledge Distillation
+### ***Knowledge Adaptation* ★☆** 
+**[Paper]** Knowledge Adaptation for Efficient Semantic Segmentation <Br>
+**[Year]** CVPR 2019 <Br>
+**[Authors]** 	Tong He, Chunhua Shen, Zhi Tian, Dong Gong, Changming Sun, Youliang Yan <Br>
+**[Pages]** <Br>
+**[Description]** <Br>	
+1) 粗读, 提出了一个用于语义分割的知识蒸馏方法. 在MobileNetV2的基础上mIoU提高了2个点.<Br>
+2) 本文不是直接让student的feature逼近teacher的feature, 而是用一个自编码器把teacher的feature变换为更compact的表示, 并令student去逼近这个表示. <Br>
+3) 本文认为小网络捕获long-term dependency的能力比较弱, 所以设计了一个affinity distillation模块, 采用Non Local的思路, 计算两两像素间的內积, 并使teacher和student网络的affinity matrix相近. <Br>
+
 ## Other Interesting Papers
 ### COB ★
 **[Paper]** Convolutional Oriented Boundaries <Br>
