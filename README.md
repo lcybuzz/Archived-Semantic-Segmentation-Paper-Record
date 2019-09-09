@@ -21,11 +21,11 @@
 	- ★★  <Br>
 **[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**, **[Gated-SCNN]**  <Br>
 	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]**, **[JPU]**, **[Hierarchical Region Selection]**, **[CFNet]**, **[DANet]**, **[Integrated Classification]** <Br>
+**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]**, **[JPU]**, **[Hierarchical Region Selection]**, **[CFNet]**, **[DANet]**, **[Integrated Classification]**, **[ShelfNet]** <Br>
 	- ♥  <Br>
 **[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
 # Real time
-**Enet**, **ICNet**, **BiSeNet**, **Fast-SCNN**, **DFANet**, **ShuffleNetV2+DPC**, **ISCTF**
+**Enet**, **ICNet**, **BiSeNet**, **Fast-SCNN**, **DFANet**, **ShuffleNetV2+DPC**, **ISCTF**, **[ShelfNet]**
 	
 # Deep Learning Methods
 
@@ -372,6 +372,13 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 1) 实时语义分割, 空间细节特征和上下文语义特征融合的典型方法, 在时间和性能上取得了很好的平衡. <Br>
 2) 分为spatial path和context path两支, spatial部分用3个conv下采样8倍, 保持空间细节信息; context部分使用xception39或resnet18为backbone, 设计了类似SENet的attention进行refine; 最后特征融合时设计了类似于residual attention的融合模块. 使用了auxiliary loss. 
 
+### **ShelfNet ★** 
+**[Paper]* ShelfNet for Fast Semantic Segmentation <Br>
+**[Year]**  arXiv 1811 <Br>
+**[Authors]** Juntang Zhuang, Junlin Yang, Lin Gu, Nicha Dvornek<Br>
+**[Pages]** https://github.com/juntang-zhuang/ShelfNet <Br>
+**[Description]** <Br>	
+1) 一个实时分割网络, 使用多个encoder-decoder结构, 达到ensemble的作用. 性能不错, 同样速度下优于BiSeNet. <Br>
 	
 ### **Fast-SCNN ★** 
 **[Paper]** Fast-SCNN: Fast Semantic Segmentation Network <Br>
