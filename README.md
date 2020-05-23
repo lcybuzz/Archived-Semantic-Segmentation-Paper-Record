@@ -14,18 +14,6 @@
 - [Datasets](#datasets)
 - [Leaderboards](#leaderboards)
 - [Sources-Lists](#sources-lists)
-# Rank
-- Semantic Segmentation<Br>
-	- ★★★ <Br>
-**[FCN]**, 
-	- ★★  <Br>
-**[DeepLab]**, **[DeepLab-V3+]**, **[SegNet]**, **[FoveaNet]**, **[PSPNet]**, **[RefineNet]**, **[FastMask]**, **[DFN]**, **[Understanding Convolution]**, **[EncNet]**, **[Gated-SCNN]**  <Br>
-	- ★  <Br>
-**[U-Net]**, **[zoom-out]**, **[Dilated Convolution]**, **[DeepLab-V2]**, **[DeepLab-V3]**, **[Attention to Scale]**, **[DeconvNet]**, **[Piecewise CRF]**, **[ENet]**, **[ParseNet]**, **[Adapt Structured Output Space]**, **[CCNet]**, **[Fast-SCNN]**, **[DFANet]**, **[DeeperLab]**, **[ICNet]**, **[BiSeNet]**, **[ISCTF]**, **[Layer Cascade]**, **[Pixel Objectness]**, **[Bidirectional Learning]**, **[JPU]**, **[Hierarchical Region Selection]**, **[CFNet]**, **[DANet]**, **[Integrated Classification]**, **[ShelfNet]** <Br>
-	- ♥  <Br>
-**[CRFasRNN]**, **[GCN]**, **[PixelNet]**, **[LinkNet]**, **[SDN]**, **[FC-DenseNet]**  <Br>
-# Real time
-**Enet**, **ICNet**, **BiSeNet**, **Fast-SCNN**, **DFANet**, **ShuffleNetV2+DPC**, **ISCTF**, **[ShelfNet]**
 	
 # Deep Learning Methods
 
@@ -135,6 +123,12 @@
 **[Description]** <Br>
 1) 多尺度特征融合是语义分割中提高性能的关键之一, 目前特征融合一般使用简单的max或average操作. 本文则使用一个基于FCN的网络训练一weight map, 给多尺度feature map中不同目标区域的各个scale赋予不同的权值, 最后对多尺度的map进行加权求和, 得出融合特征. <Br>
 2) 在训练deeplab中使用了extra supervision. 实验结果表明extra supervision对性能提升有明显作用, 比attention效果明显得多.. <Br>
+	
+### DPC ★★★
+**[Paper]** (NIPS 2018) Searching for Efficient Multi-Scale Architectures for Dense Image Prediction  <Br>
+**[Authors]** [Liang-Chieh Chen](http://liangchiehchen.com/), Maxwell D. Collins, Yukun Zhu, George Papandreou, Barret Zoph, Florian Schroff, Hartwig Adam, Jonathon Shlens<Br>
+**[[TF-Code](https://github.com/tensorflow/models/tree/master/research/deeplab)]**  <Br>
+搜索部分没有细看, NAS用于语义分割的代表性工作, 以被集成到Tensorflow DeepLab工程中.
 
 ### **CRFasRNN ★♥** 
 **[Paper]** Conditional Random Fields as Recurrent Neural Networks<Br>
