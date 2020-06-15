@@ -8,8 +8,6 @@
   - [Transfer related](#transfer-related)
   - [Knowledge distillation](#knowledge-distillation)
   - [Other Interesting Papers](#other-interesting-papers)
-- [Rank](#rank)
-- [Real Time Methods](#real-time)
 - [Traditional Classical Methods](#traditional-classical-methods)
 - [Datasets](#datasets)
 - [Leaderboards](#leaderboards)
