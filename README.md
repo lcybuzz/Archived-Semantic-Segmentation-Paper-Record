@@ -1,5 +1,4 @@
-# Personal-Semantic-Segmentation-Paper-Record
-# Under construction!
+# Personal-Archived-Semantic-Segmentation-Paper-Record
 # Table of Contents
 - [Deep Learning Methods](#deep-learning-methods)
   - [Semantic Segmentation](#semantic-segmentation)
@@ -457,14 +456,14 @@ https://github.com/GeorgeSeif/Semantic-Segmentation-Suite (3rd party)<Br>
 **[Pages]**  https://github.com/valeoai/ADVENT<Br>
 **[Description]** <Br>	
 	
-### **ShelfNet ** 
+### **ShelfNet** 
 **[Paper]**  ShelfNet for fast semantic segmentation<Br>
 **[Year]** arXiv 1811<Br>
 **[Authors]** Juntang Zhuang, Junlin Yang, Lin Gu, Nicha Dvornek<Br>
 **[Pages]**  https://github.com/juntang-zhuang/ShelfNet <Br>
 **[Description]** <Br>	
 	
-### **SwiftNet ** 
+### **SwiftNet** 
 **[Paper]**  In Defense of Pre-trained ImageNet Architectures for Real-time Semantic Segmentation of Road-driving Images<Br>
 **[Year]** CVPR 2019 <Br>
 **[Authors]** Marin Oršić, [Ivan Kreš](https://ivankreso.github.io/), [Siniša Šegvić](http://www.zemris.fer.hr/~ssegvic/index_en.html), Petra Bevandić<Br>
